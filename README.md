@@ -1,7 +1,7 @@
 # Adidas product view component
 This repo contains react components that mimic the product view cpmponent on www.adidas.com
 
-![Sample Product Component](/data/sample.png)
+![Sample Product Component](/db/data/sample.png)
 
 ## Getting Started
 
