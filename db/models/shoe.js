@@ -27,9 +27,10 @@ var schema = mongoose.Schema({
   ]
 });
 
-var ShoeModel = mongoose.model('Shoe', schema);
+let ShoeModel = mongoose.model('Shoe', schema);
+mongoose.connect('mongodb://localhost/adidas');
 
-// findAll retrieves all authors
+// findAll retrieves all shoes
 function findAll(callback) {
   ShoeModel.find({}, callback);
 }
@@ -37,12 +38,11 @@ function findAll(callback) {
 
 // findOne will retrieve the shoe associated with the given id
 function findOne(id, callback) {
-  ShoeModel.find({id: id}, callback);
+  ShoeModel.find({id: id}, callback)
 }
 
 // insertOne inserts a shoe into the db
 function insertOne(shoe, callback) {
-  console.log('inseritng..');
   ShoeModel.create(shoe, callback);
 }
 
