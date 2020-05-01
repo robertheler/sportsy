@@ -113,7 +113,7 @@ if (seed_data.length > 100) {
           dest: `./Images/${picName}`,
           timeout: 10000
         }
-        downloadIMG(options);
+        // downloadIMG(options); <-------------------------- this will obliterate your RAM and will take a long time
       }
     }
   }
