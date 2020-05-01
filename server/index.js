@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const router = require('./router.js');
 
 // Import the path module from node to create absolute file paths for express static
 const path = require('path');
@@ -19,6 +20,6 @@ const PORT = 3000;
 
 // Serve static files. Any requests for specific files will be served if they exist in the provided folder
 app.use(express.static(path.join(__dirname, '../client/dist')));
-
+app.use('/api/shoes', router);
 // Start the server on the provided port
 app.listen(PORT, () => console.log('Listening on port: http://localhost:' + PORT));
