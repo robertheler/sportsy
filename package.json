@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "react-dev": "webpack -w",
-    "start": "nodemon ./server/index.js"
+    "start": "nodemon ./server/index.js",
+    "seed-database": "node ./db/seed.js"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.15.0",
+    "mongoose": "^5.9.11",
     "mysql": "^2.16.0",
     "nodemon": "^1.19.2",
     "react": "^16.10.1",

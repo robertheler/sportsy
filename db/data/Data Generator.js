@@ -69,7 +69,7 @@ for (var i = 0; i < data.length; i++) {
     let shoe = {
       id: item["02 SKU"],
       name: item["03 Title"],
-      collection: getCollection(),
+      collection_name: getCollection(),
       review_count: getReviewCount(),
       review_average: getReviewAverage(),
       colors: [{

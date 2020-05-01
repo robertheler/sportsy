@@ -2,7 +2,7 @@
   {
     "id": "B42200",
     "name": "NMD_R1 Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 394,
     "review_average": "3.52",
     "colors": [
@@ -357,7 +357,7 @@
   {
     "id": "D96635",
     "name": "NMD_R1 Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 943,
     "review_average": "3.88",
     "colors": [
@@ -571,7 +571,7 @@
   {
     "id": "FV3642",
     "name": "NMD_R1 Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 912,
     "review_average": "4.87",
     "colors": [
@@ -888,7 +888,7 @@
   {
     "id": "EG4960",
     "name": "Superstar Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 260,
     "review_average": "4.01",
     "colors": [
@@ -1132,7 +1132,7 @@
   {
     "id": "EF9625",
     "name": "ZX 4000 4D Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 489,
     "review_average": "4.13",
     "colors": [
@@ -1452,7 +1452,7 @@
   {
     "id": "FV5361",
     "name": "Swift Run RF Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 905,
     "review_average": "3.71",
     "colors": [
@@ -1899,7 +1899,7 @@
   {
     "id": "EE7161",
     "name": "U_Path Run Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 177,
     "review_average": "3.63",
     "colors": [
@@ -2521,7 +2521,7 @@
   {
     "id": "EF5403",
     "name": "Nite Jogger Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 206,
     "review_average": "4.32",
     "colors": [
@@ -2833,7 +2833,7 @@
   {
     "id": "FV7869",
     "name": "Stan Smith Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 934,
     "review_average": "4.61",
     "colors": [
@@ -3166,7 +3166,7 @@
   {
     "id": "EF8475",
     "name": "Campus ADV Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 491,
     "review_average": "4.82",
     "colors": [
@@ -3379,7 +3379,7 @@
   {
     "id": "FV3743",
     "name": "Continental 80 Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 159,
     "review_average": "3.78",
     "colors": [
@@ -3713,7 +3713,7 @@
   {
     "id": "FV5360",
     "name": "Swift Run RF Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 995,
     "review_average": "3.62",
     "colors": [
@@ -4180,7 +4180,7 @@
   {
     "id": "EF5402",
     "name": "Nite Jogger Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 937,
     "review_average": "3.82",
     "colors": [
@@ -4395,7 +4395,7 @@
   {
     "id": "EF5405",
     "name": "Nite Jogger Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 435,
     "review_average": "4.94",
     "colors": [
@@ -4707,7 +4707,7 @@
   {
     "id": "FY0728",
     "name": "Superstar 80s Human Made Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 486,
     "review_average": "4.27",
     "colors": [
@@ -5157,7 +5157,7 @@
   {
     "id": "EF8519",
     "name": "Tyshawn Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 62,
     "review_average": "3.36",
     "colors": [
@@ -5802,7 +5802,7 @@
   {
     "id": "FV4493",
     "name": "Pro Model Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 460,
     "review_average": "3.64",
     "colors": [
@@ -6051,7 +6051,7 @@
   {
     "id": "FW6415",
     "name": "NMD_R1 Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 429,
     "review_average": "4.30",
     "colors": [
@@ -6265,7 +6265,7 @@
   {
     "id": "FV3017",
     "name": "Superstar Laceless Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 391,
     "review_average": "4.19",
     "colors": [
@@ -6705,7 +6705,7 @@
   {
     "id": "EG7964",
     "name": "ZX Torsion Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 34,
     "review_average": "4.17",
     "colors": [
@@ -6919,7 +6919,7 @@
   {
     "id": "FW5328",
     "name": "NMD_R1 V2 Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 124,
     "review_average": "4.64",
     "colors": [
@@ -7136,7 +7136,7 @@
   {
     "id": "EG2731",
     "name": "3MC Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 271,
     "review_average": "4.63",
     "colors": [
@@ -7653,7 +7653,7 @@
   {
     "id": "B75806",
     "name": "Samba OG Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 834,
     "review_average": "4.70",
     "colors": [
@@ -7971,7 +7971,7 @@
   {
     "id": "FW8029",
     "name": "Superstar ADV x Gonz Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 74,
     "review_average": "4.21",
     "colors": [
@@ -8541,7 +8541,7 @@
   {
     "id": "G27639",
     "name": "U_Path Run Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 173,
     "review_average": "3.13",
     "colors": [
@@ -9174,7 +9174,7 @@
   {
     "id": "EF2803",
     "name": "Americana Hi Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 249,
     "review_average": "3.21",
     "colors": [
@@ -9383,7 +9383,7 @@
   {
     "id": "FX7893",
     "name": "NMD_R1 Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 448,
     "review_average": "3.74",
     "colors": [
@@ -9944,7 +9944,7 @@
   {
     "id": "FX3814",
     "name": "OZWEEGO Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 744,
     "review_average": "3.42",
     "colors": [
@@ -10274,7 +10274,7 @@
   {
     "id": "FV2875",
     "name": "ZX 750 HD Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 67,
     "review_average": "4.86",
     "colors": [
@@ -10598,7 +10598,7 @@
   {
     "id": "FV4759",
     "name": "Rivalry Low Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 914,
     "review_average": "3.37",
     "colors": [
@@ -10912,7 +10912,7 @@
   {
     "id": "EG6864",
     "name": "Supercourt RX Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 518,
     "review_average": "4.02",
     "colors": [
@@ -11323,7 +11323,7 @@
   {
     "id": "B75807",
     "name": "Samba OG Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 806,
     "review_average": "3.80",
     "colors": [
@@ -11538,7 +11538,7 @@
   {
     "id": "FX8003",
     "name": "Pharrell Williams Stan Smith Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 470,
     "review_average": "3.53",
     "colors": [
@@ -11975,7 +11975,7 @@
   {
     "id": "FW2895",
     "name": "Disney Mickey Mouse Stan Smith Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 192,
     "review_average": "4.81",
     "colors": [
@@ -12297,7 +12297,7 @@
   {
     "id": "G27707",
     "name": "Continental 80 Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 886,
     "review_average": "3.60",
     "colors": [
@@ -12619,7 +12619,7 @@
   {
     "id": "EE5905",
     "name": "Nite Jogger Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 785,
     "review_average": "4.67",
     "colors": [
@@ -13146,7 +13146,7 @@
   {
     "id": "BD7927",
     "name": "ZX 4000 4D Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 663,
     "review_average": "4.65",
     "colors": [
@@ -13651,7 +13651,7 @@
   {
     "id": "FV3788",
     "name": "Nite Jogger Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 838,
     "review_average": "4.18",
     "colors": [
@@ -13967,7 +13967,7 @@
   {
     "id": "BD7480",
     "name": "Gazelle Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 72,
     "review_average": "3.85",
     "colors": [
@@ -14186,7 +14186,7 @@
   {
     "id": "EG6088",
     "name": "Samoa Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 84,
     "review_average": "3.00",
     "colors": [
@@ -14808,7 +14808,7 @@
   {
     "id": "FU7644",
     "name": "OZWEEGO Tech Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 644,
     "review_average": "4.40",
     "colors": [
@@ -15054,7 +15054,7 @@
   {
     "id": "EE6034",
     "name": "Supercourt Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 669,
     "review_average": "3.56",
     "colors": [
@@ -15372,7 +15372,7 @@
   {
     "id": "FX7246",
     "name": "X_PLR Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 882,
     "review_average": "4.85",
     "colors": [
@@ -15689,7 +15689,7 @@
   {
     "id": "EF9623",
     "name": "ZX 4000 4D Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 616,
     "review_average": "3.53",
     "colors": [
@@ -16128,7 +16128,7 @@
   {
     "id": "EG8063",
     "name": "Rivalry Low Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 873,
     "review_average": "3.82",
     "colors": [
@@ -16795,7 +16795,7 @@
   {
     "id": "M20325",
     "name": "Stan Smith Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 455,
     "review_average": "3.20",
     "colors": [
@@ -17390,7 +17390,7 @@
   {
     "id": "FW3104",
     "name": "Basket Profi Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 204,
     "review_average": "4.45",
     "colors": [
@@ -17809,7 +17809,7 @@
   {
     "id": "EF6368",
     "name": "Top Ten Hi Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 949,
     "review_average": "3.50",
     "colors": [
@@ -18028,7 +18028,7 @@
   {
     "id": "FY2755",
     "name": "Pro Model Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 460,
     "review_average": "4.73",
     "colors": [
@@ -18451,7 +18451,7 @@
   {
     "id": "FW3108",
     "name": "Basket Profi Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 180,
     "review_average": "4.65",
     "colors": [
@@ -19086,7 +19086,7 @@
   {
     "id": "FX8010",
     "name": "Pharrell Williams Nizza Hi RF Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 501,
     "review_average": "3.56",
     "colors": [
@@ -19402,7 +19402,7 @@
   {
     "id": "EG6734",
     "name": "Continental Vulc Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 77,
     "review_average": "4.07",
     "colors": [
@@ -19713,7 +19713,7 @@
   {
     "id": "EE3681",
     "name": "Yung-96 Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 247,
     "review_average": "4.28",
     "colors": [
@@ -20344,7 +20344,7 @@
   {
     "id": "FV7920",
     "name": "ZX Flux Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 134,
     "review_average": "4.08",
     "colors": [
@@ -20552,7 +20552,7 @@
   {
     "id": "FV7565",
     "name": "Type O-1 Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 129,
     "review_average": "3.14",
     "colors": [
@@ -20766,7 +20766,7 @@
   {
     "id": "BY9260",
     "name": "X_PLR Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 116,
     "review_average": "4.41",
     "colors": [
@@ -20979,7 +20979,7 @@
   {
     "id": "EH0249",
     "name": "Nite Jogger Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 981,
     "review_average": "4.60",
     "colors": [
@@ -21300,7 +21300,7 @@
   {
     "id": "FX8025",
     "name": "Pharrell Williams Campus Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 706,
     "review_average": "3.75",
     "colors": [
@@ -21511,7 +21511,7 @@
   {
     "id": "EG5517",
     "name": "Top Ten Hi Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 734,
     "review_average": "4.49",
     "colors": [
@@ -21994,7 +21994,7 @@
   {
     "id": "EF4347",
     "name": "ZX Torsion Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 509,
     "review_average": "4.15",
     "colors": [
@@ -22312,7 +22312,7 @@
   {
     "id": "EG2469",
     "name": "Liberty Cup Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 995,
     "review_average": "4.50",
     "colors": [
@@ -22636,7 +22636,7 @@
   {
     "id": "B79758",
     "name": "NMD_R1 Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 170,
     "review_average": "4.47",
     "colors": [
@@ -22851,7 +22851,7 @@
   {
     "id": "EE6820",
     "name": "X_PLR Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 292,
     "review_average": "3.58",
     "colors": [
@@ -23165,7 +23165,7 @@
   {
     "id": "EG5407",
     "name": "ZX Flux Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 504,
     "review_average": "3.07",
     "colors": [
@@ -23671,7 +23671,7 @@
   {
     "id": "EE6086",
     "name": "3MC Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 923,
     "review_average": "4.83",
     "colors": [
@@ -24304,7 +24304,7 @@
   {
     "id": "BD7633",
     "name": "Handball Spezial Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 427,
     "review_average": "3.37",
     "colors": [
@@ -24825,7 +24825,7 @@
   {
     "id": "EG8790",
     "name": "LXCON 94 Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 442,
     "review_average": "3.71",
     "colors": [
@@ -25141,7 +25141,7 @@
   {
     "id": "FV4695",
     "name": "Pro Model Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 971,
     "review_average": "3.75",
     "colors": [
@@ -25557,7 +25557,7 @@
   {
     "id": "EF4974",
     "name": "Stan Smith Recon Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 851,
     "review_average": "3.69",
     "colors": [
@@ -26084,7 +26084,7 @@
   {
     "id": "FV6574",
     "name": "OZWEEGO Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 243,
     "review_average": "3.05",
     "colors": [
@@ -26298,7 +26298,7 @@
   {
     "id": "FW3102",
     "name": "Basket Profi Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 580,
     "review_average": "4.28",
     "colors": [
@@ -26622,7 +26622,7 @@
   {
     "id": "DB3105",
     "name": "3MC Vulc Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 493,
     "review_average": "3.84",
     "colors": [
@@ -26835,7 +26835,7 @@
   {
     "id": "EE4771",
     "name": "EQT Gazelle Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 687,
     "review_average": "3.95",
     "colors": [
@@ -27384,7 +27384,7 @@
   {
     "id": "AQ8528",
     "name": "Seeley Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 170,
     "review_average": "4.70",
     "colors": [
@@ -28038,7 +28038,7 @@
   {
     "id": "EE6464",
     "name": "OZWEEGO Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 92,
     "review_average": "3.37",
     "colors": [
@@ -28693,7 +28693,7 @@
   {
     "id": "FV2534",
     "name": "Bed J.W. Ford Supercourt Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 129,
     "review_average": "4.57",
     "colors": [
@@ -29255,7 +29255,7 @@
   {
     "id": "EE5303",
     "name": "FYW S-97 Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 511,
     "review_average": "3.95",
     "colors": [
@@ -29708,7 +29708,7 @@
   {
     "id": "EF4001",
     "name": "Stan Smith Recon Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 541,
     "review_average": "3.60",
     "colors": [
@@ -30164,7 +30164,7 @@
   {
     "id": "S84596",
     "name": "Top Ten Hi Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 619,
     "review_average": "3.46",
     "colors": [
@@ -30813,7 +30813,7 @@
   {
     "id": "FV7114",
     "name": "Type O-2 Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 50,
     "review_average": "4.95",
     "colors": [
@@ -31114,7 +31114,7 @@
   {
     "id": "DB3021",
     "name": "Handball Spezial Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 682,
     "review_average": "4.62",
     "colors": [
@@ -31327,7 +31327,7 @@
   {
     "id": "EF6001",
     "name": "Continental Vulc Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 64,
     "review_average": "3.87",
     "colors": [
@@ -31724,7 +31724,7 @@
   {
     "id": "EF8460",
     "name": "3ST.004 Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 762,
     "review_average": "3.05",
     "colors": [
@@ -32312,7 +32312,7 @@
   {
     "id": "EE4987",
     "name": "Rivalry RM Low Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 546,
     "review_average": "3.50",
     "colors": [
@@ -32621,7 +32621,7 @@
   {
     "id": "EH0045",
     "name": "NMD_R1 Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 894,
     "review_average": "3.96",
     "colors": [
@@ -33247,7 +33247,7 @@
   {
     "id": "EH0169",
     "name": "Continental 80 Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 670,
     "review_average": "3.83",
     "colors": [
@@ -33781,7 +33781,7 @@
   {
     "id": "EG9074",
     "name": "Haiwee Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 584,
     "review_average": "4.26",
     "colors": [
@@ -33983,7 +33983,7 @@
   {
     "id": "FX3904",
     "name": "Superstan Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 270,
     "review_average": "3.39",
     "colors": [
@@ -34477,7 +34477,7 @@
   {
     "id": "EF5404",
     "name": "Nite Jogger Shoes",
-    "collection": "Originals",
+    "collection_name": "Originals",
     "review_count": 426,
     "review_average": "3.81",
     "colors": [
@@ -34808,7 +34808,7 @@
   {
     "id": "EE6035",
     "name": "Supercourt Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 744,
     "review_average": "4.80",
     "colors": [
@@ -35215,7 +35215,7 @@
   {
     "id": "FX3471",
     "name": "Chicago Girls Do It Better Superstar Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 33,
     "review_average": "3.52",
     "colors": [
@@ -35864,7 +35864,7 @@
   {
     "id": "FX4008",
     "name": "Pro Model J.J. Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 122,
     "review_average": "4.57",
     "colors": [
@@ -36463,7 +36463,7 @@
   {
     "id": "EE4763",
     "name": "ZX 4000 Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 857,
     "review_average": "4.70",
     "colors": [
@@ -36866,7 +36866,7 @@
   {
     "id": "FV8031",
     "name": "Top Ten Hi Star Wars Obi-Wan Kenobi Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 854,
     "review_average": "4.50",
     "colors": [
@@ -37295,7 +37295,7 @@
   {
     "id": "EF1032",
     "name": "Nizza Hi RF Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 624,
     "review_average": "4.57",
     "colors": [
@@ -37602,7 +37602,7 @@
   {
     "id": "CQ0992",
     "name": "Crazy BYW Shoes",
-    "collection": "Workout",
+    "collection_name": "Workout",
     "review_count": 960,
     "review_average": "3.53",
     "colors": [
@@ -38131,7 +38131,7 @@
   {
     "id": "DB2605",
     "name": "Yung-96 Shoes",
-    "collection": "Training",
+    "collection_name": "Training",
     "review_count": 815,
     "review_average": "4.16",
     "colors": [
@@ -38541,7 +38541,7 @@
   {
     "id": "M20327",
     "name": "Stan Smith Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 812,
     "review_average": "4.64",
     "colors": [
@@ -38969,7 +38969,7 @@
   {
     "id": "FV4658",
     "name": "Supercourt Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 170,
     "review_average": "3.66",
     "colors": [
@@ -39473,7 +39473,7 @@
   {
     "id": "EE5441",
     "name": "HS Sobakov Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 759,
     "review_average": "3.63",
     "colors": [
@@ -40058,7 +40058,7 @@
   {
     "id": "G26650",
     "name": "adidas x UNDEFEATED GSG9 Shoes",
-    "collection": "Sports",
+    "collection_name": "Sports",
     "review_count": 870,
     "review_average": "4.61",
     "colors": [
@@ -40669,7 +40669,7 @@
   {
     "id": "FX3901",
     "name": "NMD_R1 V2 Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 185,
     "review_average": "3.84",
     "colors": [
@@ -41244,7 +41244,7 @@
   {
     "id": "EE8862",
     "name": "X_PLR Shoes",
-    "collection": "Athletic",
+    "collection_name": "Athletic",
     "review_count": 822,
     "review_average": "3.60",
     "colors": [
@@ -41550,7 +41550,7 @@
   {
     "id": "CQ0930",
     "name": "Tubular Shadow Shoes",
-    "collection": "Running",
+    "collection_name": "Running",
     "review_count": 964,
     "review_average": "3.38",
     "colors": [
