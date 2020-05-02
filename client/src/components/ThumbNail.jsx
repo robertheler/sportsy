@@ -9,6 +9,8 @@ const RenderDiv = styled.div`
   border: 1px solid gray;
   margin-bottom: 10px;
   box-sizing: border-box;
+  background: url(${props => props.url});
+  background-size: 100%;
   &:hover {
     border-bottom: 2px solid black;
   }
@@ -16,13 +18,24 @@ const RenderDiv = styled.div`
 
 class ThumbNail extends Component {
   constructor(props){
-    super(props)
-
+    super(props);
+    this.state = {
+      imageLocation: null
+    }
   }
 
+  componentDidMount() {
+    this.fetchImageLocation();
+  }
+  // eventually from cloud, right now from disk
+  fetchImageLocation(){
+    let url = `../../../db/data/images/${this.props.image}`;
+    this.setState({imageLocation: url})
+    //return url;
+  }
   render() {
     return (
-      <RenderDiv>
+      <RenderDiv url={this.state.imageLocation}>
       </RenderDiv>
     );
   }

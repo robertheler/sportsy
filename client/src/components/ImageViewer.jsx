@@ -14,14 +14,17 @@ const RenderDiv = styled.div`
 
 class ImageViewer extends Component {
   constructor(props){
-    super(props)
-
+    super(props);
+    this.state = {
+      images: this.props.images,
+      selectedImage: 0
+    }
   }
 
   render() {
     return (
       <RenderDiv>
-        <ThumbNailList />
+        <ThumbNailList images={this.state.images} selectedImage={this.state.selectedImage}/>
       </RenderDiv>
     );
   }

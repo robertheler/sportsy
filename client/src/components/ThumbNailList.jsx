@@ -21,14 +21,7 @@ class ThumbNailList extends Component {
   render() {
     return (
       <RenderDiv>
-        <ThumbNail />
-        <ThumbNail />
-        <ThumbNail />
-        <ThumbNail />
-        <ThumbNail />
-        <ThumbNail />
-        <ThumbNail />
-        <ThumbNail />
+        {this.props.images.map(image => (<ThumbNail key={image} image={image} />))}
       </RenderDiv>
     );
   }

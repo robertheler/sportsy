@@ -17,8 +17,7 @@ class ProductInfo extends Component {
   }
 
   render() {
-    console.log(this.props.product);
-    //console.log(this.props.product.colors[this.props.color].images);
+    //console.log(this.props.product);
     return (
       <RenderDiv>
         <ImageViewer images={this.props.product.colors[this.props.color].images}/>
