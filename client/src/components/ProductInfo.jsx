@@ -7,6 +7,8 @@ const RenderDiv = styled.div`
   display: flex;
   flex-flow: row wrap;
   align-content: stretch;
+  padding:0px;
+  margin 0px;
 `;
 
 class ProductInfo extends Component {

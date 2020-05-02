@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import ThumbNailList from './ThumbNailList.jsx';
 
 const RenderDiv = styled.div`
-  background-color: #3f51b5;
   min-height: 700px;
-  min-width: 960px;
+  flex-basis: 800px;
   flex-grow: 3;
-
+  width: auto;
+  background-color: #ECEFF1;
+  padding-left: 20px;
+  vertical-align: middle;
 `;
 
 class ImageViewer extends Component {
@@ -18,7 +21,7 @@ class ImageViewer extends Component {
   render() {
     return (
       <RenderDiv>
-        Hello World
+        <ThumbNailList />
       </RenderDiv>
     );
   }
