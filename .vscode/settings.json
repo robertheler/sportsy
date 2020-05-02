@@ -1,0 +1,36 @@
+{
+  "editor.lightbulb.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.parameterHints.enabled": true,
+  "editor.renderWhitespace": "all",
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "emmet.showExpandedAbbreviation": "never",
+  "files.trimTrailingWhitespace": true,
+  "javascript.suggest.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.validate.enable": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Mayukai Mirage Gruvbox Darktooth",
+  "editor.fontSize": 13.5,
+  "editor.tabCompletion": "on",
+  "workbench.activityBar.visible": true,
+  "editor.renderControlCharacters": true,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "explorer.confirmDelete": false,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "workbench.colorCustomizations": {},
+  "files.autoSave": "onWindowChange",
+  "window.zoomLevel": 0,
+  "babel-compile-on-save.srcDir": "./compiled/src",
+  "workbench.editorAssociations": [
+
+
+  ],
+
+
+
+}

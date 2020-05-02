@@ -10,6 +10,7 @@ router.route('/:id').get(function(req, res) {
       console.log(err);
       res.status(500).end();
     } else {
+
       res.json(shoe);
     }
   });
