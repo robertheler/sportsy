@@ -14,13 +14,14 @@ const RenderDiv = styled.div`
 class ProductInfo extends Component {
   constructor(props){
     super(props)
-
   }
 
   render() {
+    console.log(this.props.product);
+    //console.log(this.props.product.colors[this.props.color].images);
     return (
       <RenderDiv>
-        <ImageViewer />
+        <ImageViewer images={this.props.product.colors[this.props.color].images}/>
         <OrderInfo />
       </RenderDiv>
     );
