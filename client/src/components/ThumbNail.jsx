@@ -3,12 +3,14 @@ import styled from 'styled-components';
 
 const RenderDiv = styled.div`
   display: flex;
+  z-index: 1;
   flex-direction: column;
   width: 52px;
   height: 52px;
   border: ${props => (props.isSelected === true ? '1px solid black' : '1px solid gray')};
   border-bottom: ${props => (props.isSelected === true ? '2px solid black' : '1px solid gray')};
   margin-bottom: 10px;
+
   box-sizing: border-box;
   background: url(${props => props.url});
   background-size: 100%;

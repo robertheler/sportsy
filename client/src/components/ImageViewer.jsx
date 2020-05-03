@@ -8,11 +8,29 @@ const RenderDiv = styled.div`
   flex-grow: 3;
   width: auto;
   background-color: #ECEFF1;
-  background: url(${props => props.url});
-  background-size: auto 700px;
-  background-repeat: no-repeat;
   padding-left: 20px;
   vertical-align: middle;
+  display: flex;
+  flex-flow: row;
+  align-content: stretch;
+`;
+
+const StyledDiv = styled.div`
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+`
+const StyledImg = styled.div`
+  z-index: 0;
+  height: 700px;
+  width: 100%;
+  background: url(${props => props.image});
+  background-repeat: no-repeat;
+  background-size: auto 700px;
+  background-position: center;
+  left: auto;
 `;
 
 class ImageViewer extends Component {
@@ -31,9 +49,11 @@ class ImageViewer extends Component {
     this.setState({indexOfSelected: index, urlOfSelected: url});
   }
   render() {
+    console.log(this.state.urlOfSelected);
     return (
-      <RenderDiv url={this.state.urlOfSelected}>
+      <RenderDiv>
         <ThumbNailList images={this.state.images} selectedImage={this.state.selectedImage} updateImage={this.updateImage}/>
+        <StyledDiv><StyledImg image={this.state.urlOfSelected}></StyledImg></StyledDiv>
       </RenderDiv>
     );
   }

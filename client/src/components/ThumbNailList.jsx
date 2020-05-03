@@ -5,11 +5,12 @@ import ThumbNail from './ThumbNail.jsx';
 const RenderDiv = styled.div`
   display: flex;
   flex-direction: column;
-  width: 52px;
+  width: 60px;
   position: relative;
   top: 100px;
   overflow: hidden;
-
+  z-index: 1000;
+  margin-right: 10px;
 `;
 
 class ThumbNailList extends Component {
