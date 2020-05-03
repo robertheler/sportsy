@@ -14,14 +14,32 @@ const RenderDiv = styled.div`
 
 class ThumbNailList extends Component {
   constructor(props){
-    super(props)
+    super(props);
+    this.state = {
+      indexOfSelected: 0
+    }
 
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(index, url) {
+    this.setState({indexOfSelected: index});
+    this.props.updateImage(index, url);
   }
 
   render() {
+    let arrayOfThumbNails = [];
+    for (let i = 0; i < this.props.images.length; i++) {
+      if(i === this.state.indexOfSelected) {
+        arrayOfThumbNails.push(<ThumbNail key={i} index={i} image={this.props.images[i]} handleClick={this.handleClick} isSelected={true}/>)
+      } else {
+        arrayOfThumbNails.push(<ThumbNail key={i} index={i} image={this.props.images[i]} handleClick={this.handleClick} isSelected={false}/>)
+      }
+    }
+
     return (
       <RenderDiv>
-        {this.props.images.map(image => (<ThumbNail key={image} image={image} />))}
+        {arrayOfThumbNails}
       </RenderDiv>
     );
   }

@@ -8,6 +8,9 @@ const RenderDiv = styled.div`
   flex-grow: 3;
   width: auto;
   background-color: #ECEFF1;
+  background: url(${props => props.url});
+  background-size: auto 700px;
+  background-repeat: no-repeat;
   padding-left: 20px;
   vertical-align: middle;
 `;
@@ -17,14 +20,20 @@ class ImageViewer extends Component {
     super(props);
     this.state = {
       images: this.props.images,
-      selectedImage: 0
+      indexOfSelected: 0,
+      urlOfSelected: ''
     }
+
+    this.updateImage = this.updateImage.bind(this);
   }
 
+  updateImage(index, url) {
+    this.setState({indexOfSelected: index, urlOfSelected: url});
+  }
   render() {
     return (
-      <RenderDiv>
-        <ThumbNailList images={this.state.images} selectedImage={this.state.selectedImage}/>
+      <RenderDiv url={this.state.urlOfSelected}>
+        <ThumbNailList images={this.state.images} selectedImage={this.state.selectedImage} updateImage={this.updateImage}/>
       </RenderDiv>
     );
   }
