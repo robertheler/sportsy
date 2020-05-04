@@ -10,20 +10,24 @@ class App extends Component {
     super(props)
     this.state = {
       product: data[0],
-      color: 0
     }
-
   }
 
+
+  // Fetches a random product from the database
   componentDidMount() {
-    let id = this.fetchProductId();
-    this.fetchProduct(id);
+    let randomId = this.randomProductId();
+    this.fetchProduct(randomId);
   }
 
-  fetchProductId() {
-    return 'FV5361'; // where will this id be coming from?
+  // Generates a random product ID
+  randomProductId() {
+    let index = Math.floor(Math.random() * data.length);
+    return data[index].id;
   }
 
+  // Fetches product details for a given product ID
+  // and sets the state
   fetchProduct(id) {
     $.ajax({
       url: PORT + `api/products/${id}`,
@@ -35,8 +39,9 @@ class App extends Component {
       error: (err) => console.log(err)
     })
   }
+
   render() {
-    return <ProductInfo product={this.state.product} color={this.state.color}/>
+    return <ProductInfo product={this.state.product}/>
   }
 }
 

@@ -14,7 +14,6 @@ const RenderDiv = styled.div`
   flex-flow: row;
   align-content: stretch;
 `;
-
 const StyledDiv = styled.div`
   z-index: 0;
   display: flex;
@@ -37,30 +36,45 @@ class ImageViewer extends Component {
   constructor(props){
     super(props);
     this.state = {
-      images: this.props.images,
-      indexOfSelected: 0,
+      images: this.props.images, //array of image file names
+      indexOfSelected: 0, // first image selected by default
       urlOfSelected: ''
     }
 
-    this.updateImage = this.updateImage.bind(this);
-  }
-  componentDidMount() {
-    this.fetchImageLocation(this.state.images[0]);
+    this.handleClick = this.handleClick.bind(this);
   }
 
+  // Fetch url of first image
+  componentDidMount() {
+    this.fetchImageLocation(this.state.images[this.state.indexOfSelected]);
+  }
+
+  // Fetches url of selected image
   fetchImageLocation(image){
     let url = `../../../db/data/images/${image}`;
     this.setState({urlOfSelected: url})
   }
 
-  updateImage(index, url) {
+  // Update state and render if props change
+  componentDidUpdate(prevProps) {
+    if (this.props.images !== prevProps.images) {
+      this.setState({
+        images: this.props.images,
+      })
+      this.fetchImageLocation(this.props.images[0]);
+    }
+  }
+
+  // Click handler is passed to child component ThumbNailList
+  // and will be called by child component
+  handleClick(index, url) {
     this.setState({indexOfSelected: index, urlOfSelected: url});
   }
+
   render() {
-    console.log(this.state.urlOfSelected);
     return (
       <RenderDiv>
-        <ThumbNailList images={this.state.images} selectedImage={this.state.selectedImage} updateImage={this.updateImage}/>
+        <ThumbNailList images={this.state.images} selectedImage={this.state.selectedImage} handleClick={this.handleClick}/>
         <StyledDiv><StyledImg image={this.state.urlOfSelected}></StyledImg></StyledDiv>
       </RenderDiv>
     );

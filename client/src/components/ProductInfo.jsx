@@ -14,13 +14,24 @@ const RenderDiv = styled.div`
 class ProductInfo extends Component {
   constructor(props){
     super(props)
+    this.state = {
+      product: this.props.product
+    }
+  }
+
+  // Update state and render if props change
+  componentDidUpdate(prevProps) {
+    if (this.props.product !== prevProps.product) {
+      this.setState({
+        product: this.props.product,
+      })
+    }
   }
 
   render() {
-    //console.log(this.props.product);
     return (
       <RenderDiv>
-        <ImageViewer images={this.props.product.colors[this.props.color].images}/>
+        <ImageViewer images={this.state.product.colors[0].images}/>
         <OrderInfo />
       </RenderDiv>
     );

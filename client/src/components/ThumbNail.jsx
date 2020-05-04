@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const RenderDiv = styled.div`
   display: flex;
-  z-index: 1;
   flex-direction: column;
   width: 52px;
   height: 52px;
@@ -23,30 +22,41 @@ class ThumbNail extends Component {
   constructor(props){
     super(props);
     this.state = {
+      image: this.props.image,
       isSelected: this.props.isSelected,
       index: this.props.index,
       imageLocation: ''
     }
     this.handleClick = this.handleClick.bind(this);
-
-    if (this.state.isSelected === true) {
-      this.handleClick();
-    }
-
   }
 
+  // Update state and render if props change
+  componentDidUpdate(prevProps) {
+    if (this.props.image !== prevProps.image) {
+      this.setState({
+        image: this.props.image,
+      })
+
+      this.fetchImageLocation(this.props.image);
+    }
+  }
+
+  // Calls the click handler function of the parent component
+  // passing the index and url of the clicked ThumbNail
   handleClick(event) {
     this.props.handleClick(this.state.index, this.state.imageLocation);
   }
+
   componentDidMount() {
-    this.fetchImageLocation(this.props.image);
-    //this.handleClick();
+    this.fetchImageLocation(this.state.image);
   }
-  // eventually from cloud, right now from disk
+
+  // Fetches url of selected image
   fetchImageLocation(image){
     let url = `../../../db/data/images/${image}`;
     this.setState({imageLocation: url})
   }
+
   render() {
     return (
       <RenderDiv url={this.state.imageLocation} isSelected={this.props.isSelected} onClick={this.handleClick}>
