@@ -39,7 +39,7 @@ class Price extends Component {
 
     return (
       <RenderDiv>
-        {$+listPrice}
+         {$+listPrice}
       </RenderDiv>
     );
   }
