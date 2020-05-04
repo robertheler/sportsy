@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Review from './Review.jsx';
-import Collection from './Collection.jsx';
 
 const RenderDiv = styled.div`
-  min-height: 300px;
-  min-width: 300px;
-  flex-grow: 1;
-  font-family: AdineuePRO,Helvetica;
-  padding: 20px;
 `;
 
-class OrderInfo extends Component {
+const StyledCollection = styled.div`
+  font-size: 13px;
+  font-family: AdihausDIN,Helvetica;
+  font-weight: 400;
+  margin: 10 0 2px 0;
+  color: #767677
+`;
+
+const StyledProductName = styled.h1`
+  font-size: 30px;
+  font-family: AdineuePRO,Helvetica;
+  font-weight: 600;
+  margin: 0 0 7px 0;
+`;
+
+class Collection extends Component {
   constructor(props){
     super(props);
 
@@ -31,11 +39,11 @@ class OrderInfo extends Component {
   render() {
     return (
       <RenderDiv>
-        <Review product = {this.state.product}></Review>
-        <Collection product = {this.state.product}></Collection>
+        <StyledCollection>{this.state.product.collection_name.toUpperCase()}</StyledCollection>
+        <StyledProductName>{this.state.product.name.toUpperCase()}</StyledProductName>
       </RenderDiv>
     );
   }
 }
 
-export default OrderInfo;
+export default Collection;

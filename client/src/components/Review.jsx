@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const RenderDiv = styled.div`
-  border: 1px solid gray;
   text-decoration: underline;
   font-weight: 400;
   font-family: AdihausDIN,Helvetica;
