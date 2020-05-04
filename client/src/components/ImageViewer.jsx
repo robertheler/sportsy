@@ -44,6 +44,14 @@ class ImageViewer extends Component {
 
     this.updateImage = this.updateImage.bind(this);
   }
+  componentDidMount() {
+    this.fetchImageLocation(this.state.images[0]);
+  }
+
+  fetchImageLocation(image){
+    let url = `../../../db/data/images/${image}`;
+    this.setState({urlOfSelected: url})
+  }
 
   updateImage(index, url) {
     this.setState({indexOfSelected: index, urlOfSelected: url});

@@ -23,6 +23,7 @@ class ThumbNailList extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
+
   handleClick(index, url) {
     this.setState({indexOfSelected: index});
     this.props.updateImage(index, url);
