@@ -6,7 +6,16 @@ const RenderDiv = styled.div`
   font-family: AdihausDIN,Helvetica;
   font-size: 16px;
   word-wrap: normal;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
+`
+
+const SalePrice = styled.span`
+  color: #e32b2b
+`;
+
+const OldPrice = styled.span`
+  color: #767677;
+  text-decoration: line-through;
 `;
 
 class Price extends Component {
@@ -32,16 +41,15 @@ class Price extends Component {
     let listPrice = this.state.product.colors[this.state.color].list_price;
     let salePrice = this.state.product.colors[this.state.color].sale_price;
     if (listPrice === salePrice) {
-      return <RenderDiv>
-        ${listPrice}
-      </RenderDiv>
+      return <RenderDiv>${listPrice}</RenderDiv>
+    } else {
+      return (
+        <RenderDiv>
+          <SalePrice>${salePrice} </SalePrice><OldPrice>${listPrice}</OldPrice>
+        </RenderDiv>
+      );
     }
 
-    return (
-      <RenderDiv>
-         {$+listPrice}
-      </RenderDiv>
-    );
   }
 }
 

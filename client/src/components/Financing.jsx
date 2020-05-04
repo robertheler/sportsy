@@ -9,9 +9,6 @@ const RenderDiv = styled.div`
   word-wrap: normal;
   margin: 0 0 15px 0;
 `;
-const Installments = styled.div`
-`
-
 const LearnMore = styled.a`
   color: black;
 `

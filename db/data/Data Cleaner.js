@@ -82,6 +82,13 @@ for (let shoe of data) {
 // these two values should be the same if all images exist
 console.log(expectedImages, actualImages);
 
+// make 75% of the products on sale
+for (let shoe of data) {
+  for (let color of shoe.colors) {
+    let shouldBeOnSale = Math.random() >= 0.25; //random boolean, true 75% of the time
+  }
+}
+
  // write JSON of clean data
  fs.writeFile('clean_data_to_seed.json', JSON.stringify(data, null, 2), (err) => {
   console.log(err);

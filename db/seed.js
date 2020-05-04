@@ -18,6 +18,6 @@ const seed = function() {
   }
 };
 
-seed();
+// seed();
 
 //mongoose.disconnect();
