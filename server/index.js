@@ -19,6 +19,6 @@ app.use(cors());
 const PORT = 3000;
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
-app.use('/api/shoes', router);
+app.use('/api/products', router);
 // Start the server on the provided port
 app.listen(PORT, () => console.log(`Listening on port: http://localhost:${PORT}`));
