@@ -9,7 +9,10 @@ const StyledCollection = styled.div`
   font-family: AdihausDIN,Helvetica;
   font-weight: 400;
   margin: 10 0 2px 0;
-  color: #767677
+  color: #767677;
+  word-wrap: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 `;
 
 const StyledProductName = styled.h1`
@@ -17,6 +20,8 @@ const StyledProductName = styled.h1`
   font-family: AdineuePRO,Helvetica;
   font-weight: 600;
   margin: 0 0 7px 0;
+  word-wrap: normal;
+  text-transform: uppercase;
 `;
 
 class Collection extends Component {
@@ -39,8 +44,8 @@ class Collection extends Component {
   render() {
     return (
       <RenderDiv>
-        <StyledCollection>{this.state.product.collection_name.toUpperCase()}</StyledCollection>
-        <StyledProductName>{this.state.product.name.toUpperCase()}</StyledProductName>
+        <StyledCollection>{this.state.product.collection_name}</StyledCollection>
+        <StyledProductName>{this.state.product.name}</StyledProductName>
       </RenderDiv>
     );
   }

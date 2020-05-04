@@ -17,7 +17,8 @@ class App extends Component {
   // Fetches a random product from the database
   componentDidMount() {
     let randomId = this.randomProductId();
-    this.fetchProduct(randomId);
+    //this.fetchProduct(randomId);
+    this.fetchProduct('EF4974');
   }
 
   // Generates a random product ID

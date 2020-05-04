@@ -6,7 +6,13 @@ const RenderDiv = styled.div`
   font-weight: 400;
   font-family: AdihausDIN,Helvetica;
   font-size: 14px;
+  word-wrap: normal;
+  margin: 0 0 15px 0;
 `;
+
+const StyledA = styled.a`
+  color: black;
+`
 
 class Review extends Component {
   constructor(props){
@@ -27,7 +33,8 @@ class Review extends Component {
 
   render() {
     return (
-      <RenderDiv>{`Read all ${this.state.product.review_count} reviews`}
+      <RenderDiv>
+        <StyledA href="">{`Read all ${this.state.product.review_count} reviews`}</StyledA>
       </RenderDiv>
     );
   }

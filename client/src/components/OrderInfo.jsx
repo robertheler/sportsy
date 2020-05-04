@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Review from './Review.jsx';
 import Collection from './Collection.jsx';
+import Financing from './Financing.jsx';
 
 const RenderDiv = styled.div`
   min-height: 300px;
-  min-width: 300px;
+  flex-basis: 300px;
   flex-grow: 1;
   font-family: AdineuePRO,Helvetica;
   padding: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
 `;
 
 class OrderInfo extends Component {
@@ -16,9 +19,11 @@ class OrderInfo extends Component {
     super(props);
 
     this.state = {
-      product: this.props.product
+      product: this.props.product,
+      color: 0
     }
   }
+
   // Update state and render if props change
   componentDidUpdate(prevProps) {
     if (this.props.product !== prevProps.product) {
@@ -31,8 +36,9 @@ class OrderInfo extends Component {
   render() {
     return (
       <RenderDiv>
-        <Review product = {this.state.product}></Review>
-        <Collection product = {this.state.product}></Collection>
+        <Review product={this.state.product}></Review>
+        <Collection product={this.state.product}></Collection>
+        <Financing product={this.state.product} color={this.state.color}></Financing>
       </RenderDiv>
     );
   }
