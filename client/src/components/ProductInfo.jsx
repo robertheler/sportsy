@@ -32,7 +32,7 @@ class ProductInfo extends Component {
     return (
       <RenderDiv>
         <ImageViewer images={this.state.product.colors[0].images}/>
-        <OrderInfo />
+        <OrderInfo product={this.state.product}/>
       </RenderDiv>
     );
   }

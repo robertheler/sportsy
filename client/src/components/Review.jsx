@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Review from './Review.jsx';
 
 const RenderDiv = styled.div`
-  min-height: 300px;
-  min-width: 300px;
-  flex-grow: 1;
   border: 1px solid gray;
-  font-family: AdineuePRO,Helvetica;
+  text-decoration: underline;
+  font-weight: 400;
+  font-family: AdihausDIN,Helvetica;
+  font-size: 14px;
 `;
 
-class OrderInfo extends Component {
+class Review extends Component {
   constructor(props){
     super(props);
 
@@ -29,11 +28,10 @@ class OrderInfo extends Component {
 
   render() {
     return (
-      <RenderDiv>
-        <Review product = {this.state.product}></Review>
+      <RenderDiv>{`Read all ${this.state.product.review_count} reviews`}
       </RenderDiv>
     );
   }
 }
 
-export default OrderInfo;
+export default Review;
