@@ -10,7 +10,6 @@ const StyledImage = styled.div`
   border-radius: 50%;
   width: 70px;
   height: 70px;
-  border: 1px solid red;
   background: url(${props => props.url});
   background-size: 100%;
 `;

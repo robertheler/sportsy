@@ -32,7 +32,7 @@ class ColorList extends Component {
 
   // Fetches url of selected image
   fetchImageLocation(image){
-    let url = `../../../db/data/images/${image}`;
+    let url = `https://adidasproducts.s3-us-west-1.amazonaws.com/images/${image}`;
     return url;
   }
 
