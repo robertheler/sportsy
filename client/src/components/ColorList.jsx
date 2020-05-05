@@ -31,20 +31,18 @@ class ColorList extends Component {
   }
 
   render() {
-    return (
-      <RenderDiv>
-        <Color />
-        <Color />
-        <Color />
-        <Color />
-        <Color />
-        <Color />
-        <Color />
-        <Color />
-        <Color />
+    let arrayOfColors = [];
+    for (let i = 0; i < this.state.product.colors.length; i++) {
+      // currently selected ThumbNail is passed prop isSelected = true
+      // because it needs to be styled differently
+      if(i === this.state.color) {
+        arrayOfColors.push(<Color key={i} color={i} product={this.state.product} isSelected={true}/>)
+      } else {
+        arrayOfColors.push(<Color key={i} color={i} product={this.state.product} isSelected={false}/>)
+      }
+    }
 
-      </RenderDiv>
-    );
+    return (<RenderDiv>{arrayOfColors}</RenderDiv>);
   }
 }
 
