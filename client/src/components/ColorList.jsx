@@ -30,20 +30,30 @@ class ColorList extends Component {
     }
   }
 
+  // Fetches url of selected image
+  fetchImageLocation(image){
+    let url = `../../../db/data/images/${image}`;
+    return url;
+  }
+
   render() {
     let arrayOfColors = [];
     for (let i = 0; i < this.state.product.colors.length; i++) {
       // currently selected ThumbNail is passed prop isSelected = true
       // because it needs to be styled differently
       if(i === this.state.color) {
-        arrayOfColors.push(<Color key={i} color={i} product={this.state.product} isSelected={true}/>)
+        arrayOfColors.push(<Color key={i} color={i} product={this.state.product} isSelected={true}
+          url={this.fetchImageLocation(this.state.product.colors[i].images[0])}/>)
       } else {
-        arrayOfColors.push(<Color key={i} color={i} product={this.state.product} isSelected={false}/>)
+        arrayOfColors.push(<Color key={i} color={i} product={this.state.product} isSelected={false}
+          url={this.fetchImageLocation(this.state.product.colors[i].images[0])}/>)
       }
     }
 
     return (<RenderDiv>{arrayOfColors}</RenderDiv>);
   }
+
+
 }
 
 export default ColorList;

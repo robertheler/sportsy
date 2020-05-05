@@ -10,7 +10,9 @@ const StyledImage = styled.div`
   border-radius: 50%;
   width: 70px;
   height: 70px;
-  border: 1px solid red
+  border: 1px solid red;
+  background: url(${props => props.url});
+  background-size: 100%;
 `;
 
 const StyledSelectedTick = styled.h1`
@@ -24,7 +26,8 @@ class Color extends Component {
     this.state = {
       product: this.props.product,
       color: this.props.color,
-      isSelected: false
+      isSelected: this.props.isSelected,
+      url: this.props.url
     }
   }
   // Update state and render if props change
@@ -33,15 +36,19 @@ class Color extends Component {
       this.setState({
         product: this.props.product,
         color: this.props.color,
-        isSelected: this.props.isSelected
+        isSelected: this.props.isSelected,
+        url: this.props.url,
       })
     }
+
+    //this.fetchImageLocation(this.props.product.colors[this.props.color].images[0]);
   }
+
 
   render() {
     return (
       <RenderDiv>
-        <StyledImage/>
+        <StyledImage url={this.state.url}/>
       </RenderDiv>
     );
   }
