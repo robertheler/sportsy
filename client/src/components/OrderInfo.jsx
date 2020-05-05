@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import Review from './Review.jsx';
 import Collection from './Collection.jsx';
 import Financing from './Financing.jsx';
-import AvailableColors from './AvailableColors.jsx'
+import AvailableColors from './AvailableColors.jsx';
+import ColorList from './ColorList.jsx';
 
 const RenderDiv = styled.div`
   min-height: 300px;
@@ -41,6 +42,7 @@ class OrderInfo extends Component {
         <Collection product={this.state.product}/>
         <Financing product={this.state.product} color={this.state.color}/>
         <AvailableColors product={this.state.product} color={this.state.color}/>
+        <ColorList product={this.state.product} color={this.state.color}/>
       </RenderDiv>
     );
   }

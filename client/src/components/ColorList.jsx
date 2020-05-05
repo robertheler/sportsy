@@ -1,0 +1,51 @@
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import Color from './Color.jsx'
+
+const RenderDiv = styled.div`
+  margin-top 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+`;
+
+
+class ColorList extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      product: this.props.product,
+      color: this.props.color,
+    }
+  }
+  // Update state and render if props change
+  componentDidUpdate(prevProps) {
+    if (this.props.product !== prevProps.product || this.props.color !== prevProps.color){
+      this.setState({
+        product: this.props.product,
+        color: this.props.color,
+      })
+    }
+  }
+
+  render() {
+    return (
+      <RenderDiv>
+        <Color />
+        <Color />
+        <Color />
+        <Color />
+        <Color />
+        <Color />
+        <Color />
+        <Color />
+        <Color />
+
+      </RenderDiv>
+    );
+  }
+}
+
+export default ColorList;
