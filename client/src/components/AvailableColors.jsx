@@ -5,7 +5,7 @@ const RenderDiv = styled.div`
 `;
 
 const StyledColorNames = styled.div`
-  font-size: 13px;
+  font-size: 11px;
   font-family: AdihausDIN,Helvetica;
   font-weight: 400;
   margin: 10 0 2px 0;

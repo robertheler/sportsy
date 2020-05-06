@@ -11,7 +11,7 @@ const RenderDiv = styled.div`
   flex-basis: 300px;
   flex-grow: 1;
   font-family: AdineuePRO,Helvetica;
-  padding: 20px;
+  padding: 30px 40px;
   flex-direction: column;
   flex-wrap: wrap;
 `;

@@ -1,24 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const StyledCollection = styled.div`
-  font-size: 13px;
-  font-family: AdihausDIN,Helvetica;
-  font-weight: 400;
-  margin: 10 0 2px 0;
-  color: #767677;
-  word-wrap: normal;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-`;
-
 const StyledProductName = styled.h1`
-  font-size: 30px;
-  font-family: AdineuePRO,Helvetica;
-  font-weight: 600;
+  font-size: 52px;
+  font-family: AdihausDIN Cn,Helvetica;
+  font-weight: 500;
   margin: 0 0 7px 0;
   word-wrap: normal;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 `;
 
 class Collection extends Component {
@@ -28,10 +18,7 @@ class Collection extends Component {
 
   render() {
     return (
-      <div>
-        <StyledCollection>{this.props.product.collection_name}</StyledCollection>
-        <StyledProductName>{this.props.product.name}</StyledProductName>
-      </div>
+      <StyledProductName>{this.props.product.name}</StyledProductName>
     );
   }
 }
