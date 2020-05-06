@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount, render } from 'enzyme';
 import Color from '../client/src/components/Color';
 
 // json data will be used to generate props
@@ -9,9 +9,10 @@ function setup() {
   const props = {
     color: 0,
     product: data[0],
-    isSelected: false
+    isSelected: false,
+    handleColorChange: () => {}
   };
-  const wrapper = shallow(<Color color={props.color} product={props.product} isSelected={props.isSelected}/>);
+  const wrapper = shallow(<Color color={props.color} product={props.product} isSelected={props.isSelected} handleColorChange={props.handleColorChange}/>);
   return { wrapper, props };
 }
 

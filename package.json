@@ -8,7 +8,9 @@
     "start": "nodemon ./server/index.js",
     "seed-database": "node ./db/seed.js",
     "lint": "npx eslint --init",
-    "tests": "jest"
+    "test": "jest",
+    "test:watch": "npm run test -- --watch",
+    "test:coverage": "npm run test -- --coverage --coverageDirectory=./client/src/components"
   },
   "keywords": [],
   "author": "",

@@ -2,7 +2,6 @@ var data = require('./data.json');
 var mongoose = require('mongoose');
 var Shoes = require('./models/shoe.js');
 
-//mongoose.connect('mongodb://localhost/adidas');
 
 mongoose.connect('mongodb://localhost/adidas',function(){
     /* Drop the DB */
