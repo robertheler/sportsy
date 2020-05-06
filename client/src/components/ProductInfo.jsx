@@ -23,14 +23,13 @@ class ProductInfo extends Component {
   }
 
   handleColorChange(color) {
-    console.log('in ProductInfo', color);
     this.setState({color})
   }
 
   render() {
     return (
       <RenderDiv>
-        <ImageViewer images={this.props.product.colors[this.state.color].images} color={this.state.color}/>
+        <ImageViewer images={this.props.product.colors[this.state.color].images}/>
         <OrderInfo product={this.props.product} color={this.state.color} handleColorChange={this.handleColorChange}/>
       </RenderDiv>
     );

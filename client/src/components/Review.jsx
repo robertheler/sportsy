@@ -17,26 +17,13 @@ const StyledA = styled.a`
 class Review extends Component {
   constructor(props){
     super(props);
-
-    this.state = {
-      product: this.props.product
-    }
-  }
-
-  // Update state and render if props change
-  componentDidUpdate(prevProps) {
-    if (this.props.product !== prevProps.product) {
-      this.setState({
-        product: this.props.product,
-      })
-    }
   }
 
   //TODO Render 5 stars filled appropriately
   render() {
     return (
       <RenderDiv>
-        <StyledA href="">{`Read all ${this.state.product.review_count} reviews`}</StyledA>
+        <StyledA href="">{`Read all ${this.props.product.review_count} reviews`}</StyledA>
       </RenderDiv>
     );
   }

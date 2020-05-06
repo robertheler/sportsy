@@ -16,28 +16,13 @@ const LearnMore = styled.a`
 class Financing extends Component {
   constructor(props){
     super(props);
-
-    this.state = {
-      product: this.props.product,
-      color: this.props.color
-    }
-  }
-
-  // Update state and render if props change
-  componentDidUpdate(prevProps) {
-    if (this.props.product !== prevProps.product || this.props.color !== prevProps.color) {
-      this.setState({
-        product: this.props.product,
-        color: this.props.color,
-      })
-    }
   }
 
   render() {
-    let installment = Number(this.state.product.colors[this.state.color].sale_price / 3).toFixed(2);
+    let installment = Number(this.props.product.colors[this.props.color].sale_price / 3).toFixed(2);
     return (
       <RenderDiv>
-        <Price product={this.state.product} color={this.state.color}></Price>
+        <Price product={this.props.product} color={this.props.color}></Price>
         <span>or 3 interest-free payments of </span><strong>{installment}</strong><span> with Affirm.</span>
         <br />
         <LearnMore href="">Learn More</LearnMore>

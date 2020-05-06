@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import fetchImageLocation from '../helper.js';
 
 const RenderDiv = styled.div`
   display: flex;
@@ -21,45 +22,18 @@ const RenderDiv = styled.div`
 class ThumbNail extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      image: this.props.image,
-      isSelected: this.props.isSelected,
-      index: this.props.index,
-      imageLocation: ''
-    }
     this.handleClick = this.handleClick.bind(this);
-  }
-
-  // Update state and render if props change
-  componentDidUpdate(prevProps) {
-    if (this.props.image !== prevProps.image) {
-      this.setState({
-        image: this.props.image,
-      })
-
-      this.fetchImageLocation(this.props.image);
-    }
   }
 
   // Calls the click handler function of the parent component
   // passing the index and url of the clicked ThumbNail
-  handleClick(event) {
-    this.props.handleClick(this.state.index, this.state.imageLocation);
+  handleClick(event){
+    this.props.handleClick(this.props.index);
   }
 
-  componentDidMount() {
-    this.fetchImageLocation(this.state.image);
-  }
-
-  // Fetches url of selected image
-  fetchImageLocation(image){
-    let url = `https://adidasproducts.s3-us-west-1.amazonaws.com/images/${image}`;
-    this.setState({imageLocation: url})
-  }
-
-  render() {
+  render(){
     return (
-      <RenderDiv url={this.state.imageLocation} isSelected={this.props.isSelected} onClick={this.handleClick}>
+      <RenderDiv url={fetchImageLocation(this.props.image)} isSelected={this.props.isSelected} onClick={this.handleClick}>
       </RenderDiv>
     );
   }
