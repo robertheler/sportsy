@@ -37,7 +37,7 @@ class ImageViewer extends Component {
     super(props);
     this.state = {
       images: this.props.images, //array of image file names
-      indexOfSelected: 0, // first image selected by default
+      indexOfSelected: this.props.color, // first image selected by default
       urlOfSelected: ''
     }
 

@@ -20,10 +20,11 @@ class OrderInfo extends Component {
   constructor(props){
     super(props);
 
-    this.state = {
-      product: this.props.product,
-      color: 0
-    }
+    // this.state = {
+    //   product: this.props.product,
+    //   color: 0
+    // }
+    this.handleColorChange = this.handleColorChange.bind(this);
   }
 
   // Update state and render if props change
@@ -35,14 +36,19 @@ class OrderInfo extends Component {
     }
   }
 
+  handleColorChange(color) {
+    console.log('in OrderInfo', color);
+    this.props.handleColorChange(color);
+  }
+
   render() {
     return (
       <RenderDiv>
-        <Review product={this.state.product}/>
-        <Collection product={this.state.product}/>
-        <Financing product={this.state.product} color={this.state.color}/>
-        <AvailableColors product={this.state.product} color={this.state.color}/>
-        <ColorList product={this.state.product} color={this.state.color}/>
+        <Review product={this.props.product}/>
+        <Collection product={this.props.product}/>
+        <Financing product={this.props.product} color={this.props.color}/>
+        <AvailableColors product={this.props.product} color={this.props.color}/>
+        <ColorList product={this.props.product} color={this.props.color} handleColorChange={this.handleColorChange}/>
       </RenderDiv>
     );
   }

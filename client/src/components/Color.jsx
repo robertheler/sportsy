@@ -27,6 +27,13 @@ class Color extends Component {
       isSelected: this.props.isSelected,
       url: this.props.url
     }
+
+    this.handleColorChange = this.handleColorChange.bind(this)
+  }
+
+  handleColorChange() {
+    console.log('in Color', this.props.color);
+    this.props.handleColorChange(this.props.color)
   }
   // Update state and render if props change
   componentDidUpdate(prevProps) {
@@ -45,7 +52,7 @@ class Color extends Component {
   render() {
     return (
       <RenderDiv>
-        <StyledImage url={this.state.url}/>
+        <StyledImage url={this.state.url} onClick={this.handleColorChange}/>
       </RenderDiv>
     );
   }

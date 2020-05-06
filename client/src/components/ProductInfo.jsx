@@ -14,25 +14,24 @@ const RenderDiv = styled.div`
 class ProductInfo extends Component {
   constructor(props){
     super(props)
+
     this.state = {
-      product: this.props.product
+      color: 0 // index of color to display; default is first one
     }
+
+    this.handleColorChange = this.handleColorChange.bind(this);
   }
 
-  // Update state and render if props change
-  componentDidUpdate(prevProps) {
-    if (this.props.product !== prevProps.product) {
-      this.setState({
-        product: this.props.product,
-      })
-    }
+  handleColorChange(color) {
+    console.log('in ProductInfo', color);
+    this.setState({color})
   }
 
   render() {
     return (
       <RenderDiv>
-        <ImageViewer images={this.state.product.colors[0].images}/>
-        <OrderInfo product={this.state.product}/>
+        <ImageViewer images={this.props.product.colors[this.state.color].images} color={this.state.color}/>
+        <OrderInfo product={this.props.product} color={this.state.color} handleColorChange={this.handleColorChange}/>
       </RenderDiv>
     );
   }

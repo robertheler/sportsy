@@ -19,6 +19,13 @@ class ColorList extends Component {
       product: this.props.product,
       color: this.props.color,
     }
+
+    this.handleColorChange = this.handleColorChange.bind(this);
+  }
+
+  handleColorChange(color) {
+    console.log('in ColorList', color);
+    this.props.handleColorChange(color);
   }
 
   // Update state and render if props change
@@ -44,10 +51,10 @@ class ColorList extends Component {
       // because it needs to be styled differently
       if(i === this.state.color) {
         arrayOfColors.push(<Color key={i} color={i} product={this.state.product} isSelected={true}
-          url={this.fetchImageLocation(this.state.product.colors[i].images[0])}/>)
+          url={this.fetchImageLocation(this.state.product.colors[i].images[0])} handleColorChange={this.handleColorChange}/>)
       } else {
         arrayOfColors.push(<Color key={i} color={i} product={this.state.product} isSelected={false}
-          url={this.fetchImageLocation(this.state.product.colors[i].images[0])}/>)
+          url={this.fetchImageLocation(this.state.product.colors[i].images[0])} handleColorChange={this.handleColorChange}/>)
       }
     }
 

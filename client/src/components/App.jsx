@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ProductInfo from './ProductInfo.jsx';
 import $ from 'jquery';
 
-const data = require('../../../db/data/clean_data_to_seed.json');
+const data = require('../../../db/data.json');
 const PORT = 'http://127.0.0.1:3000/'
 
 class App extends Component {
@@ -13,12 +13,14 @@ class App extends Component {
     }
   }
 
-
   // Fetches a random product from the database
   componentDidMount() {
     let randomId = this.randomProductId();
     this.fetchProduct(randomId);
-    //this.fetchProduct('EF4974'); BD7633; EE8862;FY0728; G27707; EE7161;FX8003;EH0249; FV3743
+
+    // Below is a list of product IDs that look partiticularly good
+    // EF4974, BD7633, EE8862, FY0728, G27707, EE7161, FX8003, EH0249, FV3743
+    // this.fetchProduct('EF4974');
   }
 
   // Generates a random product ID
