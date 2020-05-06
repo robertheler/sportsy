@@ -7,9 +7,11 @@ var data = require('../db/data.json');
 
 function setup() {
   const props = {
-    url: data[0].colors[0].images[0],
+    color: 0,
+    product: data[0],
+    isSelected: false
   };
-  const wrapper = shallow(<Color url={props.url}/>);
+  const wrapper = shallow(<Color color={props.color} product={props.product} isSelected={props.isSelected}/>);
   return { wrapper, props };
 }
 

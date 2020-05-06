@@ -28,7 +28,15 @@ var schema = mongoose.Schema({
 });
 
 let ShoeModel = mongoose.model('Shoe', schema);
-mongoose.connect('mongodb://localhost/adidas');
+
+// connection options to remove warnings
+let options = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+}
+
+mongoose.connect('mongodb://localhost/adidas', options);
 
 // findAll retrieves all shoes
 function findAll(callback) {
