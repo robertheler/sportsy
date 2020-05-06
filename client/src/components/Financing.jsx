@@ -7,7 +7,7 @@ const RenderDiv = styled.div`
   font-family: AdihausDIN,Helvetica;
   font-size: 16px;
   word-wrap: normal;
-  margin: 0 0 15px 0;
+  margin: 0 0 30px 0;
 `;
 const LearnMore = styled.a`
   color: black;
