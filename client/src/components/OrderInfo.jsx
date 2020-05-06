@@ -9,10 +9,9 @@ import Size from './Size.jsx'
 
 const RenderDiv = styled.div`
   min-height: 300px;
-  flex-basis: 400px;
-  flex-grow: 1;
+  width: 350px;
   font-family: AdineuePRO,Helvetica;
-  padding: 30px 40px;
+  padding: 30px 60px;
   flex-direction: column;
   flex-wrap: wrap;
 `;

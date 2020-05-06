@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Stars from './Stars.jsx';
 
 const RenderDiv = styled.div`
   display: flex;
@@ -35,7 +36,10 @@ class Review extends Component {
     return (
       <RenderDiv>
         <StyledCollection>{this.props.product.collection_name}</StyledCollection>
-        <StyledA href="">{this.props.product.review_count}</StyledA>
+        <span>
+          <Stars>★ ★ ★ ★ ★ </Stars>
+          <StyledA href="">{this.props.product.review_count}</StyledA>
+        </span>
       </RenderDiv>
     );
   }
