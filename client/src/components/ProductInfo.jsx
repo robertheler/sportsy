@@ -23,7 +23,6 @@ class ProductInfo extends Component {
   }
 
   handleColorChange(color) {
-    console.log('in ProductInfo', color);
     this.setState({color})
   }
 

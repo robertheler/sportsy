@@ -19,29 +19,14 @@ const RenderDiv = styled.div`
 class OrderInfo extends Component {
   constructor(props){
     super(props);
-
-    // this.state = {
-    //   product: this.props.product,
-    //   color: 0
-    // }
     this.handleColorChange = this.handleColorChange.bind(this);
   }
 
-  // Update state and render if props change
-  componentDidUpdate(prevProps) {
-    if (this.props.product !== prevProps.product) {
-      this.setState({
-        product: this.props.product,
-      })
-    }
-  }
-
-  handleColorChange(color) {
-    console.log('in OrderInfo', color);
+  handleColorChange(color){
     this.props.handleColorChange(color);
   }
 
-  render() {
+  render(){
     return (
       <RenderDiv>
         <Review product={this.props.product}/>
