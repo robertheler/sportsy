@@ -19,8 +19,8 @@ class App extends Component {
     this.fetchProduct(randomId);
 
     // Below is a list of product IDs that look partiticularly good
-    // EF4974, BD7633, EE8862, FY0728, G27707, EE7161, FX8003, EH0249, FV3743
-    // this.fetchProduct('EF4974');
+    // EF4974, BD7633, EE8862, FY0728, G27707, EE7161, FX8003, EH0249, FV3743; EH0249;
+    // this.fetchProduct('FV3743');
   }
 
   // Generates a random product ID

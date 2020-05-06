@@ -5,11 +5,13 @@ import Title from './Title.jsx';
 import Financing from './Financing.jsx';
 import AvailableColors from './AvailableColors.jsx';
 import ColorList from './ColorList.jsx';
-import Size from './Size.jsx'
+import Size from './Size.jsx';
+import OutOfStock from './OutOfStock.jsx';
 
 const RenderDiv = styled.div`
   min-height: 300px;
-  width: 350px;
+  flex-basis: 350px;
+  width: 100%;
   font-family: AdineuePRO,Helvetica;
   padding: 30px 60px;
   flex-direction: column;
@@ -33,6 +35,7 @@ class OrderInfo extends Component {
         <Title product={this.props.product} color={this.props.color}/>
         <Financing product={this.props.product} color={this.props.color}/>
         <Size product={this.props.product} color={this.props.color}/>
+        <OutOfStock product={this.props.product} color={this.props.color}/>
         <AvailableColors product={this.props.product} color={this.props.color}/>
         <ColorList product={this.props.product} color={this.props.color} handleColorChange={this.handleColorChange}/>
       </RenderDiv>

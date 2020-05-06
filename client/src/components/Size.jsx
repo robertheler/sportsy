@@ -9,6 +9,7 @@ const RenderDiv = styled.div`
   font-size: 11px;
   margin: 0 0 30px 0;
   text-transform: uppercase;
+  letter-spacing: 2px;
 `;
 
 const SizeTable = styled.div`

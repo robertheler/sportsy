@@ -23,6 +23,7 @@ class Financing extends Component {
     return (
       <RenderDiv>
         <Price product={this.props.product} color={this.props.color}></Price>
+        <br />
         <span>or 3 interest-free payments of </span><strong>{installment}</strong><span> with Affirm.</span>
         <br />
         <LearnMore href="">Learn More</LearnMore>
