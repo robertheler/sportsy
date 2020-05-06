@@ -22,6 +22,7 @@ class Review extends Component {
       product: this.props.product
     }
   }
+
   // Update state and render if props change
   componentDidUpdate(prevProps) {
     if (this.props.product !== prevProps.product) {
@@ -31,6 +32,7 @@ class Review extends Component {
     }
   }
 
+  //TODO Render 5 stars filled appropriately
   render() {
     return (
       <RenderDiv>

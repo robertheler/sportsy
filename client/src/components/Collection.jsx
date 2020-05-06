@@ -32,6 +32,7 @@ class Collection extends Component {
       product: this.props.product
     }
   }
+
   // Update state and render if props change
   componentDidUpdate(prevProps) {
     if (this.props.product !== prevProps.product) {

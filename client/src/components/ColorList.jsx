@@ -20,6 +20,7 @@ class ColorList extends Component {
       color: this.props.color,
     }
   }
+
   // Update state and render if props change
   componentDidUpdate(prevProps) {
     if (this.props.product !== prevProps.product || this.props.color !== prevProps.color){
@@ -52,8 +53,6 @@ class ColorList extends Component {
 
     return (<RenderDiv>{arrayOfColors}</RenderDiv>);
   }
-
-
 }
 
 export default ColorList;

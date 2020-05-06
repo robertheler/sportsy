@@ -15,7 +15,6 @@ const StyledImage = styled.div`
 `;
 
 const StyledSelectedTick = styled.h1`
-
 `;
 
 class Color extends Component {
@@ -42,7 +41,6 @@ class Color extends Component {
 
     //this.fetchImageLocation(this.props.product.colors[this.props.color].images[0]);
   }
-
 
   render() {
     return (

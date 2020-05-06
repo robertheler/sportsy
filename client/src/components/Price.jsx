@@ -37,11 +37,16 @@ class Price extends Component {
     }
   }
 
+  // price will be redered differently depending wether the product is on sale or not
   render() {
     let listPrice = this.state.product.colors[this.state.color].list_price;
     let salePrice = this.state.product.colors[this.state.color].sale_price;
+
+    // if not on sale, render plain, in black
     if (listPrice === salePrice) {
       return <RenderDiv>${listPrice}</RenderDiv>
+
+    // if on sale, render sale price in red, old price crossed out in gray
     } else {
       return (
         <RenderDiv>
