@@ -1,4 +1,4 @@
-/* 
+/*
 
 This file is the entry point which Webpack will use to start transpiling
 It is technically the highest level of our component tree so by transpiling this

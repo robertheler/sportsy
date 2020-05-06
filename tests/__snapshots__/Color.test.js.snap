@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Color Component Test Suite It should set correct background from url 1`] = `
+<styled.div>
+  <styled.div
+    url="B42200_color0_pic0.jpg"
+  />
+</styled.div>
+`;

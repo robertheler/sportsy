@@ -2,7 +2,13 @@ var data = require('./data.json');
 var mongoose = require('mongoose');
 var Shoes = require('./models/shoe.js');
 
-mongoose.connect('mongodb://localhost/adidas');
+//mongoose.connect('mongodb://localhost/adidas');
+
+mongoose.connect('mongodb://localhost/adidas',function(){
+    /* Drop the DB */
+    //mongoose.connection.db.dropDatabase();
+});
+
 
 // inserts each JSON-formatted shoe into the database
 // seed with npm run seed-database or node seed.js

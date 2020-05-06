@@ -18,6 +18,7 @@ class App extends Component {
   componentDidMount() {
     let randomId = this.randomProductId();
     this.fetchProduct(randomId);
+    //this.fetchProduct('EF4974'); BD7633; EE8862;FY0728; G27707; EE7161;FX8003;EH0249; FV3743
   }
 
   // Generates a random product ID

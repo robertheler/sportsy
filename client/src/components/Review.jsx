@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
-import ImageViewer from './ImageViewer.jsx';
-import OrderInfo from './OrderInfo.jsx';
 import styled from 'styled-components';
 
 const RenderDiv = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  align-content: stretch;
-  padding:0px;
-  margin 0px;
+  text-decoration: underline;
+  font-weight: 400;
+  font-family: AdihausDIN,Helvetica;
+  font-size: 14px;
+  word-wrap: normal;
+  margin: 0 0 15px 0;
 `;
 
-class ProductInfo extends Component {
+const StyledA = styled.a`
+  color: black;
+`
+
+class Review extends Component {
   constructor(props){
-    super(props)
+    super(props);
+
     this.state = {
       product: this.props.product
     }
@@ -28,14 +32,14 @@ class ProductInfo extends Component {
     }
   }
 
+  //TODO Render 5 stars filled appropriately
   render() {
     return (
       <RenderDiv>
-        <ImageViewer images={this.state.product.colors[0].images}/>
-        <OrderInfo product={this.state.product}/>
+        <StyledA href="">{`Read all ${this.state.product.review_count} reviews`}</StyledA>
       </RenderDiv>
     );
   }
 }
 
-export default ProductInfo;
+export default Review;
