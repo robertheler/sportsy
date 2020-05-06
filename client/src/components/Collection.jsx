@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const RenderDiv = styled.div`
-`;
-
 const StyledCollection = styled.div`
   font-size: 13px;
   font-family: AdihausDIN,Helvetica;
@@ -27,27 +24,14 @@ const StyledProductName = styled.h1`
 class Collection extends Component {
   constructor(props){
     super(props);
-
-    this.state = {
-      product: this.props.product
-    }
-  }
-
-  // Update state and render if props change
-  componentDidUpdate(prevProps) {
-    if (this.props.product !== prevProps.product) {
-      this.setState({
-        product: this.props.product,
-      })
-    }
   }
 
   render() {
     return (
-      <RenderDiv>
-        <StyledCollection>{this.state.product.collection_name}</StyledCollection>
-        <StyledProductName>{this.state.product.name}</StyledProductName>
-      </RenderDiv>
+      <div>
+        <StyledCollection>{this.props.product.collection_name}</StyledCollection>
+        <StyledProductName>{this.props.product.name}</StyledProductName>
+      </div>
     );
   }
 }

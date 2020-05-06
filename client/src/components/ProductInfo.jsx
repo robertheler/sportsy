@@ -29,7 +29,7 @@ class ProductInfo extends Component {
   render() {
     return (
       <RenderDiv>
-        <ImageViewer images={this.props.product.colors[this.state.color].images} color={this.state.color}/>
+        <ImageViewer images={this.props.product.colors[this.state.color].images}/>
         <OrderInfo product={this.props.product} color={this.state.color} handleColorChange={this.handleColorChange}/>
       </RenderDiv>
     );

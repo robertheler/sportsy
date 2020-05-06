@@ -21,26 +21,12 @@ const OldPrice = styled.span`
 class Price extends Component {
   constructor(props){
     super(props);
-
-    this.state = {
-      product: this.props.product,
-      color: this.props.color,
-    }
-  }
-  // Update state and render if props change
-  componentDidUpdate(prevProps) {
-    if (this.props.product !== prevProps.product || this.props.color !== prevProps.color) {
-      this.setState({
-        product: this.props.product,
-        color: this.props.color,
-      })
-    }
   }
 
   // price will be redered differently depending wether the product is on sale or not
   render() {
-    let listPrice = this.state.product.colors[this.state.color].list_price;
-    let salePrice = this.state.product.colors[this.state.color].sale_price;
+    let listPrice = this.props.product.colors[this.props.color].list_price;
+    let salePrice = this.props.product.colors[this.props.color].sale_price;
 
     // if not on sale, render plain, in black
     if (listPrice === salePrice) {

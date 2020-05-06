@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ThumbNailList from './ThumbNailList.jsx';
+import fetchImageLocation from '../helper.js';
 
 const RenderDiv = styled.div`
   min-height: 700px;
@@ -36,49 +37,38 @@ class ImageViewer extends Component {
   constructor(props){
     super(props);
     this.state = {
-      images: this.props.images, //array of image file names
-      indexOfSelected: this.props.color, // first image selected by default
-      urlOfSelected: ''
+      indexOfSelected: 0, // first image selected by default
     }
 
     this.handleClick = this.handleClick.bind(this);
   }
 
-  // Fetch url of first image
-  componentDidMount() {
-    this.fetchImageLocation(this.state.images[this.state.indexOfSelected]);
-  }
-
-  // Fetches url of selected image
-  fetchImageLocation(image){
-    let url = `https://adidasproducts.s3-us-west-1.amazonaws.com/images/${image}`;
-    this.setState({urlOfSelected: url})
-  }
-
   // Update state and render if props change
+  // If new color is selected, display first pic for that color (index = 0)
   componentDidUpdate(prevProps) {
     if (this.props.images !== prevProps.images) {
       this.setState({
-        images: this.props.images,
+        indexOfSelected:0,
       })
-      this.fetchImageLocation(this.props.images[0]);
     }
   }
 
   // Click handler is passed to child component ThumbNailList
   // and will be called by child component
   handleClick(index, url) {
-    this.setState({indexOfSelected: index, urlOfSelected: url});
+    this.setState({indexOfSelected: index});
   }
 
   render() {
+    let url = this.props.images[this.state.indexOfSelected];
     return (
       <RenderDiv>
-        <ThumbNailList images={this.state.images} selectedImage={this.state.selectedImage} handleClick={this.handleClick}/>
-        <StyledDiv><StyledImg image={this.state.urlOfSelected}></StyledImg></StyledDiv>
+        <ThumbNailList images={this.props.images} indexOfSelected={this.state.indexOfSelected} handleClick={this.handleClick}/>
+        <StyledDiv><StyledImg image={fetchImageLocation(url)}></StyledImg></StyledDiv>
       </RenderDiv>
     );
   }
 }
 
 export default ImageViewer;
+
