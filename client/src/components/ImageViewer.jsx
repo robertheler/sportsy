@@ -5,7 +5,6 @@ import fetchImageLocation from '../helper.js';
 
 const RenderDiv = styled.div`
   min-height: 700px;
-  flex-basis: 800px;
   flex-grow: 3;
   width: auto;
   background-color: #ECEFF1;

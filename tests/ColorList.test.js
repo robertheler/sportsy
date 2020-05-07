@@ -21,5 +21,9 @@ describe('ColorList Component Test Suite', () => {
   it('It should render', () => {
     expect(wrapper).toHaveLength(1);
   });
+
+  it('It should render correctly', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });
 
