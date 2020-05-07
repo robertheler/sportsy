@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import ProductInfo from './ProductInfo.jsx';
+import Header from './Header.jsx';
 import $ from 'jquery';
 
 const data = require('../../../db/data.json');
@@ -44,7 +45,12 @@ class App extends Component {
   }
 
   render() {
-    return <ProductInfo product={this.state.product}/>
+    return(
+      <Fragment>
+        <Header />
+        < ProductInfo product={this.state.product}/>
+      </Fragment>
+    )
   }
 }
 

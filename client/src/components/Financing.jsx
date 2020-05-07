@@ -17,12 +17,14 @@ const LearnMore = styled.a`
   }
   cursor: pointer;
 `
-
 class Financing extends Component {
   constructor(props){
     super(props);
   }
 
+  showModal(){
+    console.log("Modal goes here");
+  }
   render() {
     let installment = Number(this.props.product.colors[this.props.color].sale_price / 3).toFixed(2);
     return (
@@ -31,7 +33,7 @@ class Financing extends Component {
         <br />
         <span>or 3 interest-free payments of </span><strong>{installment}</strong><span> with Affirm.</span>
         <br />
-        <LearnMore href="">Learn More</LearnMore>
+        <LearnMore onClick={this.showModal}>Learn More</LearnMore>
       </RenderDiv>
     );
   }
