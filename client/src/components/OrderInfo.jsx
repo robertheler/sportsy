@@ -9,13 +9,12 @@ import Size from './Size.jsx';
 import OutOfStock from './OutOfStock.jsx';
 import PurchaseButton from './PurchaseButton.jsx';
 
-
 const RenderDiv = styled.div`
   min-height: 300px;
   flex-basis: 350px;
   width: 100%;
   font-family: AdineuePRO,Helvetica;
-  padding: 30px 60px;
+  padding: 25px 25px;
   flex-direction: column;
   flex-wrap: wrap;
 `;

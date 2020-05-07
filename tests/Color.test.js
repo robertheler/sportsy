@@ -23,7 +23,7 @@ describe('Color Component Test Suite', () => {
     expect(wrapper).toHaveLength(1);
   });
 
-  it('It should set correct background from url', () => {
+  it('It should render correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });

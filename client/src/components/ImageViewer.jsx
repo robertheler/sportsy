@@ -4,7 +4,7 @@ import ThumbNailList from './ThumbNailList.jsx';
 import fetchImageLocation from '../helper.js';
 
 const RenderDiv = styled.div`
-  height: 700px;
+  min-height: 700px;
   flex-grow: 3;
   width: auto;
   background-color: #ECEFF1;

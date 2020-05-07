@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Color Component Test Suite It should set correct background from url 1`] = `
+exports[`Color Component Test Suite It should render correctly 1`] = `
 <styled.div>
   <styled.div
     onClick={[Function]}

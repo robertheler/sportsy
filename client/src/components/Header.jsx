@@ -20,7 +20,6 @@ const Span = styled.span`
     text-decoration: underline;
   }
 `
-
 const Nav = styled.div`
   display: flex;
   flex-flow: row no-wrap;
@@ -64,13 +63,11 @@ const MenuItem = styled.span`
   letter-spacing: 2px;
   box-sizing: border-box;
 `;
-
 const MainDiv = styled.div`
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   width: 90%;
-
   `;
 const HeaderDiv = styled.div`
   display: flex;
@@ -78,8 +75,6 @@ const HeaderDiv = styled.div`
   justify-content: flex-end;;
   align-items: center;
   `;
-
-
 const Search = styled.span``;
 function Header(props) {
   return(

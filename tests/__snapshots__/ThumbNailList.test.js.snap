@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component Test Suite It should render correctly 1`] = `
+<styled.div>
+  <ThumbNail
+    handleClick={[Function]}
+    image="B42200_color0_pic0.jpg"
+    index={0}
+    isSelected={true}
+    key="0"
+  />
+  <ThumbNail
+    handleClick={[Function]}
+    image="B42200_color0_pic2.jpg"
+    index={1}
+    isSelected={false}
+    key="1"
+  />
+  <ThumbNail
+    handleClick={[Function]}
+    image="B42200_color0_pic7.jpg"
+    index={2}
+    isSelected={false}
+    key="2"
+  />
+  <ThumbNail
+    handleClick={[Function]}
+    image="B42200_color0_pic8.jpg"
+    index={3}
+    isSelected={false}
+    key="3"
+  />
+  <ThumbNail
+    handleClick={[Function]}
+    image="B42200_color0_pic9.jpg"
+    index={4}
+    isSelected={false}
+    key="4"
+  />
+</styled.div>
+`;

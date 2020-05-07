@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component Test Suite It should render correctly 1`] = `
+<Fragment>
+  <styled.h1>
+    NMD_R1 Shoes
+  </styled.h1>
+  <styled.div>
+    Black / Black / Gum
+  </styled.div>
+</Fragment>
+`;

@@ -1,0 +1,1095 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorList Component Test Suite It should render correctly 1`] = `
+<styled.div>
+  <Color
+    color={0}
+    handleColorChange={[Function]}
+    isSelected={true}
+    key="0"
+    product={
+      Object {
+        "collection_name": "Training",
+        "colors": Array [
+          Object {
+            "id": 0,
+            "images": Array [
+              "B42200_color0_pic0.jpg",
+              "B42200_color0_pic2.jpg",
+              "B42200_color0_pic7.jpg",
+              "B42200_color0_pic8.jpg",
+              "B42200_color0_pic9.jpg",
+            ],
+            "inventory": Array [
+              Object {
+                "quantity": 15,
+                "size": "M 4 / W 5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4.5 / W 5.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5 / W 6",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5.5 / W 6.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6 / W 7",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6.5 / W 7.5",
+              },
+              Object {
+                "quantity": 1,
+                "size": "M 7 / W 8",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 7.5 / W 8.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8 / W 9",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 8.5 / W 9.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9 / W 10",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9.5 / W 10.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10 / W 11",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10.5 / W 11.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11 / W 12",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11.5 / W 12.5",
+              },
+              Object {
+                "quantity": 14,
+                "size": "M 12 / W 13",
+              },
+              Object {
+                "quantity": 3,
+                "size": "M 12.5 / W 13.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 13 / W 14",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 13.5 / W 14.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 14 / W 15",
+              },
+            ],
+            "list_price": 130,
+            "name": "Black / Black / Gum",
+            "sale_price": 110,
+            "url": "https://www.adidas.com/us/nmd_r1-shoes/B42200.html",
+          },
+          Object {
+            "id": 1,
+            "images": Array [
+              "B42200_color1_pic2.jpg",
+              "B42200_color1_pic3.jpg",
+              "B42200_color1_pic4.jpg",
+              "B42200_color1_pic6.jpg",
+              "B42200_color1_pic7.jpg",
+              "B42200_color1_pic8.jpg",
+              "B42200_color1_pic9.jpg",
+              "B42200_color1_pic10.jpg",
+            ],
+            "inventory": Array [
+              Object {
+                "quantity": 0,
+                "size": "M 3.5 / W 4.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4 / W 5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4.5 / W 5.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 5 / W 6",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 5.5 / W 6.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 6 / W 7",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6.5 / W 7.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 7 / W 8",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 7.5 / W 8.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8 / W 9",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8.5 / W 9.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9 / W 10",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9.5 / W 10.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10 / W 11",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10.5 / W 11.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11 / W 12",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11.5 / W 12.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 12 / W 13",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 12.5 / W 13.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 13 / W 14",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 13.5 / W 14.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 14 / W 15",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 14.5 / W 15.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 15 / W 16",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 16 / W 17",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 17 / W 18",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 18 / W 19",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 19 / W 20",
+              },
+            ],
+            "list_price": 80,
+            "name": "Cloud White / Core Black / Cloud White",
+            "sale_price": 60,
+            "url": "https://www.adidas.com/us/superstar-shoes/EG4958.html",
+          },
+          Object {
+            "id": 2,
+            "images": Array [
+              "B42200_color2_pic1.jpg",
+              "B42200_color2_pic2.jpg",
+              "B42200_color2_pic3.jpg",
+              "B42200_color2_pic5.jpg",
+              "B42200_color2_pic6.jpg",
+              "B42200_color2_pic7.jpg",
+              "B42200_color2_pic8.jpg",
+              "B42200_color2_pic9.jpg",
+            ],
+            "inventory": Array [
+              Object {
+                "quantity": 0,
+                "size": "M 4 / W 5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4.5 / W 5.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5 / W 6",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5.5 / W 6.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6 / W 7",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6.5 / W 7.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 7 / W 8",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 7.5 / W 8.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 8 / W 9",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8.5 / W 9.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9 / W 10",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9.5 / W 10.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10 / W 11",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10.5 / W 11.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11 / W 12",
+              },
+              Object {
+                "quantity": 9,
+                "size": "M 11.5 / W 12.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 12 / W 13",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 12.5 / W 13.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 13 / W 14",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 13.5 / W 14.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 14 / W 15",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 14.5 / W 15.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 15 / W 16",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 16 / W 17",
+              },
+            ],
+            "list_price": 130,
+            "name": "Cloud White / Cloud White / Cloud White",
+            "sale_price": 110,
+            "url": "https://www.adidas.com/us/nmd_r1-shoes/FV7852.html",
+          },
+        ],
+        "id": "B42200",
+        "name": "NMD_R1 Shoes",
+        "review_average": "3.52",
+        "review_count": 394,
+      }
+    }
+  />
+  <Color
+    color={1}
+    handleColorChange={[Function]}
+    isSelected={false}
+    key="1"
+    product={
+      Object {
+        "collection_name": "Training",
+        "colors": Array [
+          Object {
+            "id": 0,
+            "images": Array [
+              "B42200_color0_pic0.jpg",
+              "B42200_color0_pic2.jpg",
+              "B42200_color0_pic7.jpg",
+              "B42200_color0_pic8.jpg",
+              "B42200_color0_pic9.jpg",
+            ],
+            "inventory": Array [
+              Object {
+                "quantity": 15,
+                "size": "M 4 / W 5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4.5 / W 5.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5 / W 6",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5.5 / W 6.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6 / W 7",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6.5 / W 7.5",
+              },
+              Object {
+                "quantity": 1,
+                "size": "M 7 / W 8",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 7.5 / W 8.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8 / W 9",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 8.5 / W 9.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9 / W 10",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9.5 / W 10.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10 / W 11",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10.5 / W 11.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11 / W 12",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11.5 / W 12.5",
+              },
+              Object {
+                "quantity": 14,
+                "size": "M 12 / W 13",
+              },
+              Object {
+                "quantity": 3,
+                "size": "M 12.5 / W 13.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 13 / W 14",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 13.5 / W 14.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 14 / W 15",
+              },
+            ],
+            "list_price": 130,
+            "name": "Black / Black / Gum",
+            "sale_price": 110,
+            "url": "https://www.adidas.com/us/nmd_r1-shoes/B42200.html",
+          },
+          Object {
+            "id": 1,
+            "images": Array [
+              "B42200_color1_pic2.jpg",
+              "B42200_color1_pic3.jpg",
+              "B42200_color1_pic4.jpg",
+              "B42200_color1_pic6.jpg",
+              "B42200_color1_pic7.jpg",
+              "B42200_color1_pic8.jpg",
+              "B42200_color1_pic9.jpg",
+              "B42200_color1_pic10.jpg",
+            ],
+            "inventory": Array [
+              Object {
+                "quantity": 0,
+                "size": "M 3.5 / W 4.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4 / W 5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4.5 / W 5.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 5 / W 6",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 5.5 / W 6.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 6 / W 7",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6.5 / W 7.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 7 / W 8",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 7.5 / W 8.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8 / W 9",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8.5 / W 9.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9 / W 10",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9.5 / W 10.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10 / W 11",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10.5 / W 11.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11 / W 12",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11.5 / W 12.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 12 / W 13",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 12.5 / W 13.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 13 / W 14",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 13.5 / W 14.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 14 / W 15",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 14.5 / W 15.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 15 / W 16",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 16 / W 17",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 17 / W 18",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 18 / W 19",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 19 / W 20",
+              },
+            ],
+            "list_price": 80,
+            "name": "Cloud White / Core Black / Cloud White",
+            "sale_price": 60,
+            "url": "https://www.adidas.com/us/superstar-shoes/EG4958.html",
+          },
+          Object {
+            "id": 2,
+            "images": Array [
+              "B42200_color2_pic1.jpg",
+              "B42200_color2_pic2.jpg",
+              "B42200_color2_pic3.jpg",
+              "B42200_color2_pic5.jpg",
+              "B42200_color2_pic6.jpg",
+              "B42200_color2_pic7.jpg",
+              "B42200_color2_pic8.jpg",
+              "B42200_color2_pic9.jpg",
+            ],
+            "inventory": Array [
+              Object {
+                "quantity": 0,
+                "size": "M 4 / W 5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4.5 / W 5.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5 / W 6",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5.5 / W 6.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6 / W 7",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6.5 / W 7.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 7 / W 8",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 7.5 / W 8.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 8 / W 9",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8.5 / W 9.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9 / W 10",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9.5 / W 10.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10 / W 11",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10.5 / W 11.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11 / W 12",
+              },
+              Object {
+                "quantity": 9,
+                "size": "M 11.5 / W 12.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 12 / W 13",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 12.5 / W 13.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 13 / W 14",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 13.5 / W 14.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 14 / W 15",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 14.5 / W 15.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 15 / W 16",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 16 / W 17",
+              },
+            ],
+            "list_price": 130,
+            "name": "Cloud White / Cloud White / Cloud White",
+            "sale_price": 110,
+            "url": "https://www.adidas.com/us/nmd_r1-shoes/FV7852.html",
+          },
+        ],
+        "id": "B42200",
+        "name": "NMD_R1 Shoes",
+        "review_average": "3.52",
+        "review_count": 394,
+      }
+    }
+  />
+  <Color
+    color={2}
+    handleColorChange={[Function]}
+    isSelected={false}
+    key="2"
+    product={
+      Object {
+        "collection_name": "Training",
+        "colors": Array [
+          Object {
+            "id": 0,
+            "images": Array [
+              "B42200_color0_pic0.jpg",
+              "B42200_color0_pic2.jpg",
+              "B42200_color0_pic7.jpg",
+              "B42200_color0_pic8.jpg",
+              "B42200_color0_pic9.jpg",
+            ],
+            "inventory": Array [
+              Object {
+                "quantity": 15,
+                "size": "M 4 / W 5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4.5 / W 5.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5 / W 6",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5.5 / W 6.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6 / W 7",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6.5 / W 7.5",
+              },
+              Object {
+                "quantity": 1,
+                "size": "M 7 / W 8",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 7.5 / W 8.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8 / W 9",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 8.5 / W 9.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9 / W 10",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9.5 / W 10.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10 / W 11",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10.5 / W 11.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11 / W 12",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11.5 / W 12.5",
+              },
+              Object {
+                "quantity": 14,
+                "size": "M 12 / W 13",
+              },
+              Object {
+                "quantity": 3,
+                "size": "M 12.5 / W 13.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 13 / W 14",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 13.5 / W 14.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 14 / W 15",
+              },
+            ],
+            "list_price": 130,
+            "name": "Black / Black / Gum",
+            "sale_price": 110,
+            "url": "https://www.adidas.com/us/nmd_r1-shoes/B42200.html",
+          },
+          Object {
+            "id": 1,
+            "images": Array [
+              "B42200_color1_pic2.jpg",
+              "B42200_color1_pic3.jpg",
+              "B42200_color1_pic4.jpg",
+              "B42200_color1_pic6.jpg",
+              "B42200_color1_pic7.jpg",
+              "B42200_color1_pic8.jpg",
+              "B42200_color1_pic9.jpg",
+              "B42200_color1_pic10.jpg",
+            ],
+            "inventory": Array [
+              Object {
+                "quantity": 0,
+                "size": "M 3.5 / W 4.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4 / W 5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4.5 / W 5.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 5 / W 6",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 5.5 / W 6.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 6 / W 7",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6.5 / W 7.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 7 / W 8",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 7.5 / W 8.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8 / W 9",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8.5 / W 9.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9 / W 10",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9.5 / W 10.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10 / W 11",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10.5 / W 11.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11 / W 12",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11.5 / W 12.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 12 / W 13",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 12.5 / W 13.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 13 / W 14",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 13.5 / W 14.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 14 / W 15",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 14.5 / W 15.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 15 / W 16",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 16 / W 17",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 17 / W 18",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 18 / W 19",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 19 / W 20",
+              },
+            ],
+            "list_price": 80,
+            "name": "Cloud White / Core Black / Cloud White",
+            "sale_price": 60,
+            "url": "https://www.adidas.com/us/superstar-shoes/EG4958.html",
+          },
+          Object {
+            "id": 2,
+            "images": Array [
+              "B42200_color2_pic1.jpg",
+              "B42200_color2_pic2.jpg",
+              "B42200_color2_pic3.jpg",
+              "B42200_color2_pic5.jpg",
+              "B42200_color2_pic6.jpg",
+              "B42200_color2_pic7.jpg",
+              "B42200_color2_pic8.jpg",
+              "B42200_color2_pic9.jpg",
+            ],
+            "inventory": Array [
+              Object {
+                "quantity": 0,
+                "size": "M 4 / W 5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 4.5 / W 5.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5 / W 6",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 5.5 / W 6.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6 / W 7",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 6.5 / W 7.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 7 / W 8",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 7.5 / W 8.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 8 / W 9",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 8.5 / W 9.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9 / W 10",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 9.5 / W 10.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10 / W 11",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 10.5 / W 11.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 11 / W 12",
+              },
+              Object {
+                "quantity": 9,
+                "size": "M 11.5 / W 12.5",
+              },
+              Object {
+                "quantity": 15,
+                "size": "M 12 / W 13",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 12.5 / W 13.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 13 / W 14",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 13.5 / W 14.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 14 / W 15",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 14.5 / W 15.5",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 15 / W 16",
+              },
+              Object {
+                "quantity": 0,
+                "size": "M 16 / W 17",
+              },
+            ],
+            "list_price": 130,
+            "name": "Cloud White / Cloud White / Cloud White",
+            "sale_price": 110,
+            "url": "https://www.adidas.com/us/nmd_r1-shoes/FV7852.html",
+          },
+        ],
+        "id": "B42200",
+        "name": "NMD_R1 Shoes",
+        "review_average": "3.52",
+        "review_count": 394,
+      }
+    }
+  />
+</styled.div>
+`;

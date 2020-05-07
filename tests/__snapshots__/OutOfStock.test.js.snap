@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component Test Suite It should render correctly 1`] = `
+<styled.div>
+  <styled.span>
+    <svg
+      height="13px"
+      width="30px"
+    >
+      <g
+        fill="none"
+        stroke="black"
+        strokeMiterlimit="10"
+      >
+        <styled.path
+          d="M.5 6.5h18v6H.5z"
+        />
+        <styled.path
+          d="M3.5 12.5v-3m3 3v-2m3 2v-3m6 3v-3m-3 3v-2"
+        />
+      </g>
+    </svg>
+    <styled.a>
+      Size Guide
+    </styled.a>
+  </styled.span>
+  <styled.a>
+    Size out of stock?
+  </styled.a>
+</styled.div>
+`;

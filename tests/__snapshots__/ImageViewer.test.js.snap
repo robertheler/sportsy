@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component Test Suite It should render correctly 1`] = `
+<styled.div>
+  <ThumbNailList
+    handleClick={[Function]}
+    images={
+      Array [
+        "B42200_color0_pic0.jpg",
+        "B42200_color0_pic2.jpg",
+        "B42200_color0_pic7.jpg",
+        "B42200_color0_pic8.jpg",
+        "B42200_color0_pic9.jpg",
+      ]
+    }
+    indexOfSelected={0}
+  />
+  <styled.div>
+    <styled.div
+      image="https://adidasproducts.s3-us-west-1.amazonaws.com/images/B42200_color0_pic0.jpg"
+    />
+  </styled.div>
+</styled.div>
+`;

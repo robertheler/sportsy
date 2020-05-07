@@ -1,21 +1,22 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
-import ColorList from '../client/src/components/ColorList';
+import ThumbNailList from '../client/src/components/ThumbNailList';
 
 // json data will be used to generate props
 var data = require('../db/data.json');
 
 function setup() {
   const props = {
+    color: 0,
     product: data[0],
-    color: 0
+    indexOfSelected: 0,
+    handleClick: () => {}
   };
-  //const wrapper = shallow(<ColorList product={props.product} color={props.color}/>);
-  const wrapper = shallow(<ColorList product={props.product} color={props.color}/>);
+  const wrapper = shallow(<ThumbNailList images={props.product.colors[props.color].images} indexOfSelected={props.indexOfSelected} handleClick={props.handleClick}/>);
   return { wrapper, props };
 }
 
-describe('ColorList Component Test Suite', () => {
+describe('Title Component Test Suite', () => {
   const { wrapper, props } = setup();
 
   it('It should render', () => {
@@ -26,4 +27,3 @@ describe('ColorList Component Test Suite', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
-
