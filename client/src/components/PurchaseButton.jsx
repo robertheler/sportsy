@@ -2,14 +2,14 @@ import React, { Component, Fragment} from 'react';
 import styled from 'styled-components';
 
 const RenderDiv = styled.div`
-font-size: 13px;
-font-family: AdihausDIN,Helvetica,Arial,sans-serif;
-font-style: normal;
-font-weight: 400;
-text-transform: uppercase;
-display: flex;
-justify-content: space-between;
-margin-bottom: 20px;
+  font-size: 13px;
+  font-family: AdihausDIN,Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 `;
 
 const StyledButton = styled.button`
@@ -33,6 +33,10 @@ const StyledButton = styled.button`
   &:hover {
     color: gray;
   }
+  &:active {
+    outline: none;
+    transform: translateY(2px) translateX(2px);
+  };
 `
 
 const Favorite = styled.div`
@@ -46,20 +50,19 @@ const Favorite = styled.div`
     color: gray;
   };
   &:active {
-    border: 2px solid gray;
+    transform: translateY(2px) translateX(2px);
   }
   vertical-align: middle;
 `
 
 const StyledSvg = styled.svg`
-margin: 0px;
-height: 50px;
-width: 50px;
-padding-top: 14px;
-padding-left: 14px;
-&:hover {
-  color: gray;
-};
+  margin: 0px;
+  height: 20px;
+  width: 20px;
+  padding: 14px;
+  &:hover {
+    color: gray;
+  };
 `
 
 const StyledPath = styled.path`
@@ -69,7 +72,6 @@ const StyledPath = styled.path`
   strokeMiterlimit: 10;
   d: path("M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z");
   pointer-events: all;
-
 `
 class PurchaseButton extends Component {
   constructor(props){
@@ -81,6 +83,9 @@ class PurchaseButton extends Component {
     this.favorite =  this.favorite.bind(this);
   }
 
+  purchase(event){
+    event.currentTarget.blur();
+  }
   favorite(event){
     this.setState({
       favorite: ! this.state.favorite
@@ -90,7 +95,7 @@ class PurchaseButton extends Component {
   render() {
     return (
         <RenderDiv>
-          <StyledButton>
+          <StyledButton onClick={this.purchase}>
             <span>Add to bag</span>
             <span>⭢</span>
           </StyledButton>
