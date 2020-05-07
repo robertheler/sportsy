@@ -11,6 +11,11 @@ const RenderDiv = styled.div`
 `;
 const LearnMore = styled.a`
   color: black;
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  cursor: pointer;
 `
 
 class Financing extends Component {

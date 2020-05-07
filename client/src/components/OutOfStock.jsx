@@ -24,6 +24,7 @@ const StyledA = styled.a`
     color: #fff;
     background-color: #000;
   }
+  cursor: pointer;
   padding: 2px;
 `
 const StyledPath = styled.path`

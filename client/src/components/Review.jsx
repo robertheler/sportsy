@@ -16,6 +16,10 @@ const RenderDiv = styled.div`
 const StyledA = styled.a`
   color: black;
   text-decoration: underline;
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
 `
 const StyledCollection = styled.div`
   font-weight: 400;
@@ -25,6 +29,14 @@ const StyledCollection = styled.div`
   text-transform: uppercase;
   letter-spacing: 2px;
 `;
+
+const StyledSpan = styled.span`
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  cursor: pointer;
+`
 
 class Review extends Component {
   constructor(props){
@@ -36,10 +48,10 @@ class Review extends Component {
     return (
       <RenderDiv>
         <StyledCollection>{this.props.product.collection_name}</StyledCollection>
-        <span>
+        <StyledSpan>
           <Stars>★ ★ ★ ★ ★ </Stars>
           <StyledA href="">{this.props.product.review_count}</StyledA>
-        </span>
+        </StyledSpan>
       </RenderDiv>
     );
   }

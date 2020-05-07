@@ -7,6 +7,8 @@ import AvailableColors from './AvailableColors.jsx';
 import ColorList from './ColorList.jsx';
 import Size from './Size.jsx';
 import OutOfStock from './OutOfStock.jsx';
+import PurchaseButton from './PurchaseButton.jsx';
+
 
 const RenderDiv = styled.div`
   min-height: 300px;
@@ -36,6 +38,7 @@ class OrderInfo extends Component {
         <Financing product={this.props.product} color={this.props.color}/>
         <Size product={this.props.product} color={this.props.color}/>
         <OutOfStock product={this.props.product} color={this.props.color}/>
+        <PurchaseButton product={this.props.product} color={this.props.color}/>
         <AvailableColors product={this.props.product} color={this.props.color}/>
         <ColorList product={this.props.product} color={this.props.color} handleColorChange={this.handleColorChange}/>
       </RenderDiv>
