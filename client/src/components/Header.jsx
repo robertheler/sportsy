@@ -6,7 +6,6 @@ const Offers = styled.div`
   flex-flow: row no-wrap;
   justify-content: space-around;
   border-top: 1px solid #ebedee;
-  border-bottom: 1px solid #ebedee;
 `
 const Span = styled.span`
   flex-flow: 300px;

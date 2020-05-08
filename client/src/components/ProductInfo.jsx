@@ -9,6 +9,7 @@ const RenderDiv = styled.div`
   align-content: stretch;
   padding:0px;
   margin 0px;
+  border-bottom: 1px solid #ebedee;
 `;
 
 class ProductInfo extends Component {

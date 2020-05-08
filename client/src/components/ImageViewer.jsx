@@ -40,6 +40,7 @@ const RenderDiv = styled.div`
   width: auto;
   min-width: 600px;
   flex-grow: 3;
+  justify-content: space-bewteen;
 `;
 
 class ImageViewer extends Component {
