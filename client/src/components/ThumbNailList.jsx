@@ -7,10 +7,10 @@ const RenderDiv = styled.div`
   flex-direction: column;
   width: 60px;
   position: relative;
-  top: 100px;
   overflow: hidden;
-  z-index: 1000;
   margin-right: 10px;
+  align-items: center;
+  justify-content: center;
 `;
 
 class ThumbNailList extends Component {
