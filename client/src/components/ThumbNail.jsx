@@ -5,11 +5,11 @@ import fetchImageLocation from '../helper.js';
 const RenderDiv = styled.div`
   display: flex;
   flex-direction: column;
-  width: 52px;
-  height: 52px;
+  width: 40px;
+  height: 40px;
   border: ${props => (props.isSelected === true ? '1px solid black' : '1px solid gray')};
   border-bottom: ${props => (props.isSelected === true ? '2px solid black' : '1px solid gray')};
-  margin-bottom: 10px;
+  margin: 0 5px;
   box-sizing: border-box;
   background: url(${props => props.url});
   background-size: 100%;

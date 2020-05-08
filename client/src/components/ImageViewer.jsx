@@ -10,10 +10,9 @@ const Images = styled.div`
   min-width: 600px;
   flex-grow: 3;
   background-color: #ECEFF1;
-  padding-left: 20px;
   vertical-align: middle;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   align-content: stretch;
 `;
 const StyledDiv = styled.div`
@@ -25,7 +24,7 @@ const StyledDiv = styled.div`
 `
 const StyledImg = styled.div`
   z-index: 0;
-  height: 700px;
+  height: 620px;
   width: 100%;
   background: url(${props => props.image});
   background-repeat: no-repeat;
@@ -79,8 +78,8 @@ class ImageViewer extends Component {
     return (
       <RenderDiv>
         <Images>
-          <ThumbNailList images={this.props.product.colors[this.props.color].images} indexOfSelected={this.state.indexOfSelected} handleClick={this.handleClick}/>
           <StyledDiv><StyledImg image={fetchImageLocation(url)}></StyledImg></StyledDiv>
+          <ThumbNailList images={this.props.product.colors[this.props.color].images} indexOfSelected={this.state.indexOfSelected} handleClick={this.handleClick}/>
         </Images>
         <ColorList product={this.props.product} color={this.props.color} handleColorChange={this.handleColorChange}/>
       </RenderDiv>
