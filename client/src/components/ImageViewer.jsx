@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ThumbNailList from './ThumbNailList.jsx';
 import fetchImageLocation from '../helper.js';
+import ColorList from './ColorList.jsx';
 
-const RenderDiv = styled.div`
+const Images = styled.div`
   min-height: 700px;
   width: auto;
-  min-width: 960px;
+  min-width: 600px;
   flex-grow: 3;
   background-color: #ECEFF1;
   padding-left: 20px;
@@ -33,6 +34,14 @@ const StyledImg = styled.div`
   left: auto;
 `;
 
+const RenderDiv = styled.div`
+  flex-flow: column no-wrap;
+  min-height: 700px;
+  width: auto;
+  min-width: 600px;
+  flex-grow: 3;
+`;
+
 class ImageViewer extends Component {
   constructor(props){
     super(props);
@@ -41,12 +50,13 @@ class ImageViewer extends Component {
     }
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleColorChange = this.handleColorChange.bind(this);
   }
 
   // Update state and render if props change
   // If new color is selected, display first pic for that color (index = 0)
   componentDidUpdate(prevProps) {
-    if (this.props.images !== prevProps.images) {
+    if (this.props.product !== prevProps.product) {
       this.setState({
         indexOfSelected:0,
       })
@@ -59,12 +69,19 @@ class ImageViewer extends Component {
     this.setState({indexOfSelected: index});
   }
 
+  handleColorChange(color){
+    this.props.handleColorChange(color);
+  }
+
   render() {
     let url = this.props.images[this.state.indexOfSelected];
     return (
       <RenderDiv>
-        <ThumbNailList images={this.props.images} indexOfSelected={this.state.indexOfSelected} handleClick={this.handleClick}/>
-        <StyledDiv><StyledImg image={fetchImageLocation(url)}></StyledImg></StyledDiv>
+        <Images>
+          <ThumbNailList images={this.props.images} indexOfSelected={this.state.indexOfSelected} handleClick={this.handleClick}/>
+          <StyledDiv><StyledImg image={fetchImageLocation(url)}></StyledImg></StyledDiv>
+        </Images>
+        <ColorList product={this.props.product} color={this.props.color} handleColorChange={this.handleColorChange}/>
       </RenderDiv>
     );
   }

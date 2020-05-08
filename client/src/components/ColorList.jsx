@@ -8,6 +8,8 @@ const RenderDiv = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  border-bottom: 1px solid #ebedee;
+  border-left: 1px solid #ebedee;
 `;
 
 class ColorList extends Component {

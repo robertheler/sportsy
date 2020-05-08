@@ -17,7 +17,7 @@ const SizeTable = styled.div`
   font-weight: 400;
   font-style: regular;
   font-size: 13px;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
   flex-wrap: wrap;
   box-sizing: border-box;
   border-left: 1px solid #ebedee;

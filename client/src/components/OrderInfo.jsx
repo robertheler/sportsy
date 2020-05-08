@@ -15,9 +15,10 @@ const RenderDiv = styled.div`
   padding: 25px 25px;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 300px;
   min-width: 300px;
   flex-grow: 1;
+  border-bottom: 1px solid #ebedee;
+  border-left: 1px solid #ebedee;
 `;
 
 class OrderInfo extends Component {
@@ -39,8 +40,6 @@ class OrderInfo extends Component {
         <Size product={this.props.product} color={this.props.color}/>
         <OutOfStock product={this.props.product} color={this.props.color}/>
         <PurchaseButton product={this.props.product} color={this.props.color}/>
-        <AvailableColors product={this.props.product} color={this.props.color}/>
-        <ColorList product={this.props.product} color={this.props.color} handleColorChange={this.handleColorChange}/>
       </RenderDiv>
     );
   }

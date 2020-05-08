@@ -1,11 +1,15 @@
 import React, { Component, Fragment } from 'react';
 import ProductInfo from './ProductInfo.jsx';
 import Header from './Header.jsx';
+import styled from 'styled-components';
 import $ from 'jquery';
 
 const data = require('../../../db/data.json');
 const PORT = 'http://127.0.0.1:3000/'
 
+const StyleApp = styled.div`
+  width: 100%;
+`
 class App extends Component {
   constructor(props) {
     super(props)
