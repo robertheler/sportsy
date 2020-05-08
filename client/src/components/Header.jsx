@@ -41,7 +41,8 @@ const MenuDiv = styled.div`
   display: flex;
   flex-flow: row no-wrap;
   justify-content: space-between;
-  padding-left: 50px;`;
+  padding-left: 50px;
+`;
 
 const Menu = styled.div`
   display: flex;
