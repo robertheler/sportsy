@@ -11,12 +11,12 @@ import PurchaseButton from './PurchaseButton.jsx';
 import Offers from './Offers.jsx';
 
 const RenderDiv = styled.div`
-  min-height: 300px;
+  min-height: 350px;
   font-family: AdineuePRO,Helvetica;
   padding: 25px 30px;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 300px;
+  width: 400px;
   flex-grow: 1;
   border-left: 1px solid #ebedee;
   border-top: 1px solid #ebedee;

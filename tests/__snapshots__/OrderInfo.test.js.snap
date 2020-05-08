@@ -2161,5 +2161,6 @@ exports[`Title Component Test Suite It should render correctly 1`] = `
       }
     }
   />
+  <Offers />
 </styled.div>
 `;

@@ -6,7 +6,7 @@ const RenderDiv = styled.div`
   font-family: AdihausDIN,Helvetica;
   font-size: 11px;
   word-wrap: normal;
-  margin: 0 0 30px 0;
+  margin: 0 0 0 0;
   color: #767677;
   word-wrap: normal;
   text-transform: uppercase;

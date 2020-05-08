@@ -7,7 +7,7 @@ const RenderDiv = styled.div`
   font-style: bold;
   font-family: AdihausDIN,Helvetica;
   font-size: 11px;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
 `;

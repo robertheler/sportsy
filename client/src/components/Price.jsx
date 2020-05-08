@@ -6,6 +6,7 @@ const RenderDiv = styled.div`
   font-family: AdihausDIN,Helvetica;
   font-size: 16px;
   word-wrap: normal;
+  margin-bottom: -10px;
 `
 
 const SalePrice = styled.span`

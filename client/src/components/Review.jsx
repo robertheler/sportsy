@@ -10,7 +10,7 @@ const RenderDiv = styled.div`
   font-family: AdihausDIN,Helvetica;
   font-size: 11px;
   word-wrap: normal;
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
 `;
 
 const StyledA = styled.a`

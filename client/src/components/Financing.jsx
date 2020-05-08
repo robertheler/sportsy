@@ -7,7 +7,7 @@ const RenderDiv = styled.div`
   font-family: AdihausDIN,Helvetica;
   font-size: 16px;
   word-wrap: normal;
-  margin: 0 0 30px 0;
+  margin: 0 0 35px 0;
 `;
 const LearnMore = styled.a`
   color: black;
@@ -16,6 +16,7 @@ const LearnMore = styled.a`
     background-color: #000;
   }
   cursor: pointer;
+  text-decoration: underline;
 `
 class Financing extends Component {
   constructor(props){

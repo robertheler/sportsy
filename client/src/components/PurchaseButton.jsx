@@ -9,7 +9,7 @@ const RenderDiv = styled.div`
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin: 35px 0;
 `;
 
 const StyledButton = styled.button`

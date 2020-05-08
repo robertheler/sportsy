@@ -15,7 +15,7 @@ exports[`Title Component Test Suite It should render a filled heart if favorited
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin: 40px 0;
 }
 
 .c1 {
