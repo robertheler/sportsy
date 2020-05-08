@@ -19,6 +19,7 @@ const StyledColorName = styled.div`
   word-wrap: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
+  word-wrap: normal;
 `;
 
 class Collection extends Component {

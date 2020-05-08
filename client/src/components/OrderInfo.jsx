@@ -15,10 +15,11 @@ const RenderDiv = styled.div`
   padding: 25px 25px;
   flex-direction: column;
   flex-wrap: wrap;
-  min-width: 300px;
+  width: 300px;
   flex-grow: 1;
   border-bottom: 1px solid #ebedee;
   border-left: 1px solid #ebedee;
+  word-wrap: normal;
 `;
 
 class OrderInfo extends Component {

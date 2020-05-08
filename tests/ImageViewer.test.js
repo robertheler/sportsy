@@ -10,7 +10,7 @@ function setup() {
     color: 0,
     product: data[0]
   };
-  const wrapper = shallow(<ImageViewer images={props.product.colors[props.color].images}/>);
+  const wrapper = shallow(<ImageViewer product={props.product} color={props.color}/>);
   return { wrapper, props };
 }
 

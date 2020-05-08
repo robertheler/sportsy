@@ -44,7 +44,15 @@ exports[`Title Component Test Suite It should render a filled heart if favorited
   -ms-flex-pack: justify;
   justify-content: space-between;
   border: none;
+  position: relative;
+  top: -2px;
+  box-shadow: 2px 2px 0 0px white,2px 2px 0 1px black;
+  box-sizing: border-box;
   cursor: pointer;
+}
+
+.c1:active {
+  box-shadow: none;
 }
 
 .c1:hover {
@@ -56,6 +64,7 @@ exports[`Title Component Test Suite It should render a filled heart if favorited
   -webkit-transform: translateY(2px) translateX(2px);
   -ms-transform: translateY(2px) translateX(2px);
   transform: translateY(2px) translateX(2px);
+  box-shadow: none;
 }
 
 .c2 {

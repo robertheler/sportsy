@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import fetchImageLocation from '../helper.js';
 
 const RenderDiv = styled.div`
-  margin-right: 5px;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 const StyledImage = styled.div`
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   background: url(${props => props.url});
   background-size: 100%;
+  margin: 0 5px;
 `;
 
 //TODO
