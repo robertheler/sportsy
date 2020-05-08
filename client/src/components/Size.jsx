@@ -19,9 +19,6 @@ const SizeTable = styled.div`
   font-size: 13px;
   grid-template-columns: repeat(auto-fill,minmax(80px,1fr));
   flex-wrap: wrap;
-  box-sizing: border-box;
-  border-left: 1px solid #ebedee;
-  border-top: 1px solid #ebedee;
 `
 
 const StyledInventory = styled.div`
@@ -33,12 +30,11 @@ const StyledInventory = styled.div`
   align-items: center;
   text-align: center;
   border: 1px solid #ebedee;
-  border-left: none;
-  border-top: none;
   &:hover {
     color: #fff;
     background-color: #000;
   }
+  margin: 0 -1px -1px 0;
 `
 class Size extends Component {
   constructor(props){

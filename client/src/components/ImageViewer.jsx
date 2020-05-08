@@ -5,7 +5,7 @@ import fetchImageLocation from '../helper.js';
 import ColorList from './ColorList.jsx';
 
 const Images = styled.div`
-  min-height: 700px;
+  height: 700px;
   width: auto;
   min-width: 600px;
   flex-grow: 3;
