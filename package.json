@@ -41,6 +41,7 @@
     "cors": "^2.8.5",
     "express": "^4.15.0",
     "file-system": "^2.2.2",
+    "jest-styled-components": "^7.0.2",
     "jquery": "^3.5.1",
     "mongoose": "^5.9.12",
     "mysql": "^2.18.1",
@@ -48,6 +49,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "serialize-javascript": "^3.0.0",
+    "sinon": "^9.0.2",
     "styled-components": "^5.1.0"
   },
   "babel": {

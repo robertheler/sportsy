@@ -11,7 +11,7 @@ import PurchaseButton from './PurchaseButton.jsx';
 
 const RenderDiv = styled.div`
   min-height: 300px;
-  flex-basis: 350px;
+  flex-basis: 400px;
   width: 100%;
   font-family: AdineuePRO,Helvetica;
   padding: 25px 25px;

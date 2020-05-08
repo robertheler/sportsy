@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component Test Suite It should render correctly 1`] = `
+<styled.div>
+  <styled.span>
+    $
+    110
+     
+  </styled.span>
+  <styled.span>
+    $
+    130
+  </styled.span>
+</styled.div>
+`;

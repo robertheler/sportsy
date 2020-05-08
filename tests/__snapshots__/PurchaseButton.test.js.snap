@@ -1,8 +1,155 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Title Component Test Suite It should render correctly 1`] = `
+exports[`Title Component Test Suite It should render a filled heart if favorited 1`] = `
+.c0 {
+  font-size: 13px;
+  font-family: AdihausDIN,Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.c1 {
+  font-size: 13px;
+  font-family: AdihausDIN,Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 15px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 80%;
+  background-color: black;
+  color: white;
+  vertical-align: middle;
+  font-weight: 700;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+}
+
+.c1:hover {
+  color: gray;
+}
+
+.c1:active {
+  outline: none;
+  -webkit-transform: translateY(2px) translateX(2px);
+  -ms-transform: translateY(2px) translateX(2px);
+  transform: translateY(2px) translateX(2px);
+}
+
+.c2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.c2:hover {
+  border: 1px solid gray;
+  color: gray;
+}
+
+.c2:active {
+  -webkit-transform: translateY(2px) translateX(2px);
+  -ms-transform: translateY(2px) translateX(2px);
+  transform: translateY(2px) translateX(2px);
+}
+
+.c3 {
+  margin: 0px;
+  height: 20px;
+  width: 20px;
+  padding: 14px;
+}
+
+.c3:hover {
+  color: gray;
+}
+
+.c4 {
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+  strokeMiterlimit: 10;
+  d: path("M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z");
+  pointer-events: all;
+}
+
+<PurchaseButton
+  favorite="true"
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <StyledButton
+        onClick={[Function]}
+      >
+        <button
+          className="c1"
+          onClick={[Function]}
+        >
+          <span>
+            Add to bag
+          </span>
+          <span>
+            ⭢
+          </span>
+        </button>
+      </StyledButton>
+      <styled.div
+        onClick={[Function]}
+      >
+        <div
+          className="c2"
+          onClick={[Function]}
+        >
+          <styled.svg>
+            <svg
+              className="c3"
+            >
+              <StyledPath
+                favorite="false"
+              >
+                <path
+                  className="c4"
+                />
+              </StyledPath>
+            </svg>
+          </styled.svg>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</PurchaseButton>
+`;
+
+exports[`Title Component Test Suite It should render an empty heart if not favorited 1`] = `
 <styled.div>
-  <styled.button
+  <StyledButton
     onClick={[Function]}
   >
     <span>
@@ -11,12 +158,36 @@ exports[`Title Component Test Suite It should render correctly 1`] = `
     <span>
       ⭢
     </span>
-  </styled.button>
+  </StyledButton>
   <styled.div
     onClick={[Function]}
   >
     <styled.svg>
-      <styled.path
+      <StyledPath
+        favorite="false"
+      />
+    </styled.svg>
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Title Component Test Suite It should render correctly 1`] = `
+<styled.div>
+  <StyledButton
+    onClick={[Function]}
+  >
+    <span>
+      Add to bag
+    </span>
+    <span>
+      ⭢
+    </span>
+  </StyledButton>
+  <styled.div
+    onClick={[Function]}
+  >
+    <styled.svg>
+      <StyledPath
         favorite="false"
       />
     </styled.svg>

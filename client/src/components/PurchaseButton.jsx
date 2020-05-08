@@ -38,6 +38,7 @@ const StyledButton = styled.button`
     transform: translateY(2px) translateX(2px);
   };
 `
+StyledButton.displayName = 'StyledButton'; // to be used in testing
 
 const Favorite = styled.div`
   width: 50px;
@@ -66,13 +67,14 @@ const StyledSvg = styled.svg`
 `
 
 const StyledPath = styled.path`
-  fill: ${(props) => props.favorite === 'true'? '#e32b2b' : 'none'}};
+  fill:${(props) => props.favorite === 'true'? '#e32b2b' : 'none'}};
   stroke: ${(props) => props.favorite === 'true'? '#e32b2b' : 'black'}};
   stroke-width: 2;
   strokeMiterlimit: 10;
   d: path("M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z");
   pointer-events: all;
 `
+StyledPath.displayName = 'StyledPath';
 class PurchaseButton extends Component {
   constructor(props){
     super(props);
@@ -86,6 +88,7 @@ class PurchaseButton extends Component {
   purchase(event){
     event.currentTarget.blur();
   }
+
   favorite(event){
     this.setState({
       favorite: ! this.state.favorite

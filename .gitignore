@@ -8,3 +8,7 @@ node_modules
 bundle.js
 
 db/data/images
+client/src/components/lcov-report/
+client/src/components/lcov.info
+client/src/components/coverage-final.json
+client/src/components/clover.xml

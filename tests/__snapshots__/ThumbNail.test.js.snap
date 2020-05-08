@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Title Component Test Suite It should have a black border if selected 1`] = `
+<ThumbNail
+  isSelected="true"
+/>
+`;
+
 exports[`Title Component Test Suite It should render correctly 1`] = `
 <styled.div
   onClick={[Function]}
