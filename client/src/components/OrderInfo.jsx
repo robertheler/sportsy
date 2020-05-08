@@ -11,12 +11,13 @@ import PurchaseButton from './PurchaseButton.jsx';
 
 const RenderDiv = styled.div`
   min-height: 300px;
-  flex-basis: 400px;
-  width: 100%;
   font-family: AdineuePRO,Helvetica;
   padding: 25px 25px;
   flex-direction: column;
   flex-wrap: wrap;
+  min-height: 300px;
+  min-width: 300px;
+  flex-grow: 1;
 `;
 
 class OrderInfo extends Component {
