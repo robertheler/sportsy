@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Offers Test Suite It should render correctly 1`] = `
+<styled.div>
+  Select Size
+  <br />
+  <br />
+  <styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 15,
+          "size": "M 4 / W 5",
+        }
+      }
+      key="0"
+    >
+      M 4 / W 5
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 1,
+          "size": "M 7 / W 8",
+        }
+      }
+      key="6"
+    >
+      M 7 / W 8
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 15,
+          "size": "M 8 / W 9",
+        }
+      }
+      key="8"
+    >
+      M 8 / W 9
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 15,
+          "size": "M 9 / W 10",
+        }
+      }
+      key="10"
+    >
+      M 9 / W 10
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 15,
+          "size": "M 9.5 / W 10.5",
+        }
+      }
+      key="11"
+    >
+      M 9.5 / W 10.5
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 15,
+          "size": "M 10 / W 11",
+        }
+      }
+      key="12"
+    >
+      M 10 / W 11
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 15,
+          "size": "M 10.5 / W 11.5",
+        }
+      }
+      key="13"
+    >
+      M 10.5 / W 11.5
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 15,
+          "size": "M 11 / W 12",
+        }
+      }
+      key="14"
+    >
+      M 11 / W 12
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 15,
+          "size": "M 11.5 / W 12.5",
+        }
+      }
+      key="15"
+    >
+      M 11.5 / W 12.5
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 14,
+          "size": "M 12 / W 13",
+        }
+      }
+      key="16"
+    >
+      M 12 / W 13
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 3,
+          "size": "M 12.5 / W 13.5",
+        }
+      }
+      key="17"
+    >
+      M 12.5 / W 13.5
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 15,
+          "size": "M 13 / W 14",
+        }
+      }
+      key="18"
+    >
+      M 13 / W 14
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 15,
+          "size": "M 13.5 / W 14.5",
+        }
+      }
+      key="19"
+    >
+      M 13.5 / W 14.5
+    </styled.div>
+    <styled.div
+      inventory={
+        Object {
+          "quantity": 15,
+          "size": "M 14 / W 15",
+        }
+      }
+      key="20"
+    >
+      M 14 / W 15
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;

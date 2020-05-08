@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1588978530773" clover="3.2.0">
-  <project timestamp="1588978530773" name="All files">
-    <metrics statements="175" coveredstatements="145" conditionals="36" coveredconditionals="18" methods="68" coveredmethods="45" elements="279" coveredelements="208" complexity="0" loc="175" ncloc="175" packages="2" files="20" classes="20"/>
+<coverage generated="1588979588121" clover="3.2.0">
+  <project timestamp="1588979588121" name="All files">
+    <metrics statements="175" coveredstatements="147" conditionals="36" coveredconditionals="18" methods="68" coveredmethods="46" elements="279" coveredelements="211" complexity="0" loc="175" ncloc="175" packages="2" files="20" classes="20"/>
     <package name="src">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="helper.js" path="/Users/robertheler/Desktop/Hack_Reactor/FEC/adidas-product/client/src/helper.js">
@@ -12,9 +12,9 @@
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="172" coveredstatements="142" conditionals="36" coveredconditionals="18" methods="67" coveredmethods="44"/>
+      <metrics statements="172" coveredstatements="144" conditionals="36" coveredconditionals="18" methods="67" coveredmethods="45"/>
       <file name="App.jsx" path="/Users/robertheler/Desktop/Hack_Reactor/FEC/adidas-product/client/src/components/App.jsx">
-        <metrics statements="13" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="4"/>
+        <metrics statements="13" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="5"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
@@ -22,8 +22,8 @@
         <line num="16" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
         <line num="53" count="0" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
@@ -184,16 +184,16 @@
       </file>
       <file name="Size.jsx" path="/Users/robertheler/Desktop/Hack_Reactor/FEC/adidas-product/client/src/components/Size.jsx">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="24" count="4" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="48" count="21" type="cond" truecount="2" falsecount="0"/>
-        <line num="49" count="14" type="stmt"/>
-        <line num="52" count="1" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="42" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="28" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
       </file>
       <file name="Stars.jsx" path="/Users/robertheler/Desktop/Hack_Reactor/FEC/adidas-product/client/src/components/Stars.jsx">
         <metrics statements="13" coveredstatements="8" conditionals="10" coveredconditionals="5" methods="2" coveredmethods="2"/>
@@ -238,9 +238,9 @@
       <file name="Title.jsx" path="/Users/robertheler/Desktop/Hack_Reactor/FEC/adidas-product/client/src/components/Title.jsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
       </file>
     </package>
   </project>

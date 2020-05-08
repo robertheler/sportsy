@@ -14,7 +14,7 @@ class Stars extends Component {
     super(props);
   }
 
-  //TODO Render 5 stars filled appropriately
+  //Render 5 stars filled appropriately
   render() {
     if (this.props.review > 4.5) {
       return (<RenderSpan>★ ★ ★ ★ ★</RenderSpan>);
