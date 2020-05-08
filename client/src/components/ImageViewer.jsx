@@ -56,7 +56,7 @@ class ImageViewer extends Component {
   // Update state and render if props change
   // If new color is selected, display first pic for that color (index = 0)
   componentDidUpdate(prevProps) {
-    if (this.props.product !== prevProps.product) {
+    if (this.props.product !== prevProps.product || this.props.color !== prevProps.color) {
       this.setState({
         indexOfSelected:0,
       })
@@ -74,11 +74,11 @@ class ImageViewer extends Component {
   }
 
   render() {
-    let url = this.props.images[this.state.indexOfSelected];
+    let url = this.props.product.colors[this.props.color].images[this.state.indexOfSelected];
     return (
       <RenderDiv>
         <Images>
-          <ThumbNailList images={this.props.images} indexOfSelected={this.state.indexOfSelected} handleClick={this.handleClick}/>
+          <ThumbNailList images={this.props.product.colors[this.props.color].images} indexOfSelected={this.state.indexOfSelected} handleClick={this.handleClick}/>
           <StyledDiv><StyledImg image={fetchImageLocation(url)}></StyledImg></StyledDiv>
         </Images>
         <ColorList product={this.props.product} color={this.props.color} handleColorChange={this.handleColorChange}/>

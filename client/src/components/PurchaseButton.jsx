@@ -29,6 +29,14 @@ const StyledButton = styled.button`
   display: flex;
   justify-content: space-between;
   border: none;
+  position: relative;
+  top: -2px;
+  box-shadow: 2px 2px 0 0px white, 2px 2px 0 1px black;
+  box-sizing: border-box;
+  &:active {
+    box-shadow: none;
+  }
+
   cursor: pointer;
   &:hover {
     color: gray;
@@ -36,6 +44,7 @@ const StyledButton = styled.button`
   &:active {
     outline: none;
     transform: translateY(2px) translateX(2px);
+    box-shadow: none;
   };
 `
 StyledButton.displayName = 'StyledButton'; // to be used in testing
