@@ -11,6 +11,7 @@ const RenderDiv = styled.div`
   margin-right: 10px;
   align-items: center;
   justify-content: center;
+  height: 700px;
 `;
 
 class ThumbNailList extends Component {

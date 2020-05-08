@@ -49,7 +49,7 @@ class Review extends Component {
       <RenderDiv>
         <StyledCollection>{this.props.product.collection_name}</StyledCollection>
         <StyledSpan>
-          <Stars>★ ★ ★ ★ ★ </Stars>
+          <Stars review={this.props.product.review_average}></Stars>
           <StyledA href="">{this.props.product.review_count}</StyledA>
         </StyledSpan>
       </RenderDiv>

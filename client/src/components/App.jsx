@@ -20,7 +20,15 @@ class App extends Component {
 
   // Fetches a random product from the database
   componentDidMount() {
-    let randomId = this.randomProductId();
+    let randomId;
+
+    // to fetch a random product, uncomment this
+    //randomId = this.randomProductId();
+
+    // to fetch a complete product for demonstration purposes
+    // uncomment this for IDs: PERF001, PERF002, PERF003, PERF004
+    randomId = 'PERF00' + Math.floor(1 + Math.random() * 4);
+
     this.fetchProduct(randomId);
 
     // Below is a list of product IDs that look partiticularly good

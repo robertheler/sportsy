@@ -16,9 +16,17 @@ class Stars extends Component {
 
   //TODO Render 5 stars filled appropriately
   render() {
-    return (
-      <RenderSpan>★ ★ ★ ★ ★</RenderSpan>
-    );
+    if (this.props.review > 4.5) {
+      return (<RenderSpan>★ ★ ★ ★ ★</RenderSpan>);
+    } else if (this.props.review > 3.5) {
+      return (<RenderSpan>★ ★ ★ ★ ☆</RenderSpan>);
+    } else if (this.props.review > 2.5) {
+      return (<RenderSpan>★ ★ ★ ☆ ☆</RenderSpan>);
+    } else if (this.props.review > 1.5) {
+      return (<RenderSpan>★ ★ ☆ ☆ ☆</RenderSpan>);
+    } else if (this.props.review > 0.5) {
+      return (<RenderSpan>★ ☆ ☆ ☆ ☆</RenderSpan>);
+    } else return (<RenderSpan>☆ ☆ ☆ ☆ ☆</RenderSpan>);
   }
 }
 
