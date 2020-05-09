@@ -16,7 +16,7 @@ const RenderDiv = styled.div`
   padding: 25px 30px;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 400px;
+  width: 350px;
   flex-grow: 1;
   border-left: 1px solid #ebedee;
   border-top: 1px solid #ebedee;

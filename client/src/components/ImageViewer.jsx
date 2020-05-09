@@ -41,7 +41,7 @@ const RenderDiv = styled.div`
   flex-flow: column no-wrap;
   min-height: 700px;
   width: auto;
-  min-width: 600px;
+  min-width: 700px;
   flex-grow: 3;
   justify-content: space-bewteen;
 `;
@@ -53,8 +53,12 @@ const Previous = styled.div`
   align-items: center;
   justify-content: center;
   background: white;
-  border: 1px solid black;
+  border: 1px solid gray;
   margin-left: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  &:hover {
+    background: rgba(255, 255, 255, 1);
+  }:
 `;
 
 const Next = styled.div`
@@ -63,9 +67,13 @@ const Next = styled.div`
   height: 50px;
   align-items: center;
   background: white;
-  border: 1px solid black;
+  border: 1px solid gray;
   margin-right: 20px;
   justify-content: center;
+  background: rgba(255, 255, 255, 0.3);
+  &:hover {
+    background: rgba(255, 255, 255, 1);
+  }:
 `;
 
 const StyledPath = styled.path`
@@ -85,6 +93,8 @@ class ImageViewer extends Component {
 
     this.handleClick = this.handleClick.bind(this);
     this.handleColorChange = this.handleColorChange.bind(this);
+    this.previous = this.previous.bind(this);
+    this.next = this.next.bind(this);
   }
 
   // Update state and render if props change
@@ -97,6 +107,33 @@ class ImageViewer extends Component {
     }
   }
 
+  // Go back to previous image on click
+  previous() {
+    // if already at first image, loop around and go to last image
+    if (this.state.indexOfSelected === 0) {
+      this.setState({
+        indexOfSelected: this.props.product.colors[this.props.color].images.length - 1
+      });
+    } else {
+      this.setState({
+        indexOfSelected: this.state.indexOfSelected - 1
+      });
+    }
+  }
+
+  // Go forward to next image on click
+  next() {
+    // if already at last image, loop around and go to first image
+    if (this.state.indexOfSelected === this.props.product.colors[this.props.color].images.length - 1) {
+      this.setState({
+        indexOfSelected: 0
+      });
+    } else {
+      this.setState({
+        indexOfSelected: this.state.indexOfSelected + 1
+      });
+    }
+  }
   // Click handler is passed to child component ThumbNailList
   // and will be called by child component
   handleClick(index, url) {
@@ -114,16 +151,16 @@ class ImageViewer extends Component {
       <RenderDiv>
         <Images>
           <StyledDiv>
-            <Previous >
-              <svg height="20px" width="30px">
+            <Previous onClick={this.previous}>
+              <svg height="20px" width="25px">
                 <g fill="none" stroke="black" strokeMiterlimit="10">
                   <StyledPath d="M6.4 17l-5-5 5-5M2 12h22"></StyledPath>
                 </g>
               </svg>
             </Previous>
             <StyledImg image={fetchImageLocation(url)}></StyledImg>
-            <Next>
-              <svg height="20px" width="30px">
+            <Next  onClick={this.next}>
+              <svg height="20px" width="25px">
                 <g fill="none" stroke="black" strokeMiterlimit="10">
                   <StyledPath d="M17.59 7l5 5-5 5M0 12h22"></StyledPath>
                 </g>
