@@ -5,7 +5,7 @@ const StyledProductName = styled.h1`
   font-size: 52px;
   font-family: AdihausDIN Cn,Helvetica;
   font-weight: 500;
-  margin: 0;
+  margin: 0 0 3px 0;
   word-wrap: normal;
   text-transform: uppercase;
   letter-spacing: 1.5px;

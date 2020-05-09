@@ -11,6 +11,10 @@ const RenderDiv = styled.div`
   justify-content: center;
   height: 700px;
   z-index:5;
+  -webkit-transition: all 0.3s;
+  &:hover {
+    -webkit-transform: scale(1.2);
+  }
 `;
 
 class ThumbNailList extends Component {

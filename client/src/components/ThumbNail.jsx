@@ -5,17 +5,18 @@ import fetchImageLocation from '../helper.js';
 const RenderDiv = styled.div`
   display: flex;
   flex-direction: column;
-  width: 40px;
-  height: 40px;
-  border: ${props => (props.isSelected === true ? '1px solid black' : '1px solid gray')};
-  border-bottom: ${props => (props.isSelected === true ? '2px solid black' : '1px solid gray')};
-  margin: 0 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: ${props => (props.isSelected === true ? '1px solid black' : '1px solid #767677')};
+  margin: 0 4px;
   box-sizing: border-box;
   background: url(${props => props.url});
   background-size: 100%;
+  -webkit-transition: all 0.2s;
   &:hover {
     border: 1px solid black;
-    border-bottom: 2px solid black;
+    -webkit-transform: scale(1.35);
   }
 `;
 
