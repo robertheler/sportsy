@@ -83,6 +83,14 @@ const StyledPath = styled.path`
   d: path("M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z");
   pointer-events: all;
 `
+
+const StyledPathArrow = styled.path`
+  padding: 0px;
+  margin-top: 0px;
+  stroke-linecap: square;
+  stroke-width: 2px;
+  d: path(${props => props.d});
+`
 StyledPath.displayName = 'StyledPath';
 class PurchaseButton extends Component {
   constructor(props){
@@ -109,7 +117,13 @@ class PurchaseButton extends Component {
         <RenderDiv>
           <StyledButton onClick={this.purchase}>
             <span>Add to bag</span>
-            <span>⭢</span>
+
+              <svg height="20px" width="25px">
+                <g fill="none" stroke="currentColor" strokeMiterlimit="10">
+                  <StyledPathArrow d="M17.59 7l5 5-5 5M0 12h22"></StyledPathArrow>
+                </g>
+              </svg>
+
           </StyledButton>
           <Favorite onClick={this.favorite}>
             <StyledSvg>
