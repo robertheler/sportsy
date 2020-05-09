@@ -10,7 +10,6 @@ const RenderDiv = styled.div`
 const StyledImage = styled.div`
   width: 60px;
   height: 60px;
-  border-radius: 10%;
   background: url(${props => props.url});
   background-size: 100%;
   margin: 0 5px;

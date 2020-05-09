@@ -18,6 +18,10 @@ const Images = styled.div`
 const StyledDiv = styled.div`
   z-index: 0;
   display: flex;
+  flex-flow: row no-wrap;
+  align-items: center;
+  width:75%;
+  background-color: #ECEFF1;
   justify-content: center;
   width: 100%;
   text-align: center;
@@ -25,7 +29,7 @@ const StyledDiv = styled.div`
 const StyledImg = styled.div`
   z-index: 0;
   height: 620px;
-  width: 100%;
+  width: 85%;
   background: url(${props => props.image});
   background-repeat: no-repeat;
   background-size: auto 700px;
@@ -41,6 +45,36 @@ const RenderDiv = styled.div`
   flex-grow: 3;
   justify-content: space-bewteen;
 `;
+
+const Previous = styled.div`
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid black;
+  margin-left: 20px;
+`;
+
+const Next = styled.div`
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  background: white;
+  border: 1px solid black;
+  margin-right: 20px;
+  justify-content: center;
+`;
+
+const StyledPath = styled.path`
+  padding: 0px;
+  margin-top: 0px;
+  stroke-linecap: square;
+  stroke-width: 2px;
+  d: path(${props => props.d});
+`
 
 class ImageViewer extends Component {
   constructor(props){
@@ -73,12 +107,29 @@ class ImageViewer extends Component {
     this.props.handleColorChange(color);
   }
 
+
   render() {
     let url = this.props.product.colors[this.props.color].images[this.state.indexOfSelected];
     return (
       <RenderDiv>
         <Images>
-          <StyledDiv><StyledImg image={fetchImageLocation(url)}></StyledImg></StyledDiv>
+          <StyledDiv>
+            <Previous >
+              <svg height="20px" width="30px">
+                <g fill="none" stroke="black" strokeMiterlimit="10">
+                  <StyledPath d="M6.4 17l-5-5 5-5M2 12h22"></StyledPath>
+                </g>
+              </svg>
+            </Previous>
+            <StyledImg image={fetchImageLocation(url)}></StyledImg>
+            <Next>
+              <svg height="20px" width="30px">
+                <g fill="none" stroke="black" strokeMiterlimit="10">
+                  <StyledPath d="M17.59 7l5 5-5 5M0 12h22"></StyledPath>
+                </g>
+              </svg>
+            </Next>
+          </StyledDiv>
           <ThumbNailList images={this.props.product.colors[this.props.color].images} indexOfSelected={this.state.indexOfSelected} handleClick={this.handleClick}/>
         </Images>
         <ColorList product={this.props.product} color={this.props.color} handleColorChange={this.handleColorChange}/>
