@@ -4,13 +4,17 @@ import ThumbNail from './ThumbNail.jsx';
 
 const RenderDiv = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 60px;
+  flex-direction: row;
   position: relative;
-  top: 100px;
   overflow: hidden;
-  z-index: 1000;
-  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  z-index:5;
+  -webkit-transition: all 0.3s;
+  &:hover {
+    -webkit-transform: scale(1.2);
+  }
 `;
 
 class ThumbNailList extends Component {

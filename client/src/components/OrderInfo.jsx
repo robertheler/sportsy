@@ -8,15 +8,19 @@ import ColorList from './ColorList.jsx';
 import Size from './Size.jsx';
 import OutOfStock from './OutOfStock.jsx';
 import PurchaseButton from './PurchaseButton.jsx';
+import Offers from './Offers.jsx';
 
 const RenderDiv = styled.div`
-  min-height: 300px;
-  flex-basis: 400px;
-  width: 100%;
+  min-height: 350px;
   font-family: AdineuePRO,Helvetica;
-  padding: 25px 25px;
+  padding: 25px 30px;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 350px;
+  flex-grow: 1;
+  border-left: 1px solid #ebedee;
+  border-top: 1px solid #ebedee;
+  word-wrap: normal;
 `;
 
 class OrderInfo extends Component {
@@ -38,8 +42,7 @@ class OrderInfo extends Component {
         <Size product={this.props.product} color={this.props.color}/>
         <OutOfStock product={this.props.product} color={this.props.color}/>
         <PurchaseButton product={this.props.product} color={this.props.color}/>
-        <AvailableColors product={this.props.product} color={this.props.color}/>
-        <ColorList product={this.props.product} color={this.props.color} handleColorChange={this.handleColorChange}/>
+        <Offers/>
       </RenderDiv>
     );
   }

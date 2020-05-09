@@ -10,7 +10,7 @@ function setup() {
     color: 0,
     product: data[0]
   };
-  const wrapper = shallow(<ImageViewer images={props.product.colors[props.color].images}/>);
+  const wrapper = shallow(<ImageViewer product={props.product} color={props.color}/>);
   return { wrapper, props };
 }
 
@@ -35,7 +35,7 @@ describe('Title Component Test Suite', () => {
   it('It should correctly reset state when props change' ,() => {
     wrapper.instance().state.indexOfSelected = 1;
     expect(wrapper.instance().state.indexOfSelected).toBe(1);
-    wrapper.instance().componentDidUpdate({images: "new images should trigger state change"});
+    wrapper.instance().componentDidUpdate({color: "new color should trigger state change"});
     expect(wrapper.instance().state.indexOfSelected).toBe(0);
   })
 });

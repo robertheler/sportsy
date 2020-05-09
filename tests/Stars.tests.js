@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
-import App from '../client/src/components/App';
+import Stars from '../client/src/components/Size';
 
 // json data will be used to generate props
 var data = require('../db/data.json');
@@ -10,11 +10,11 @@ function setup() {
     color: 0,
     product: data[0]
   };
-  const wrapper = shallow(<App color={props.color} product={props.product} isSelected={props.isSelected} handleColorChange={props.handleColorChange}/>);
+  const wrapper = mount(<Stars review="3.2"/>);
   return { wrapper, props };
 }
 
-describe('App Component Test Suite', () => {
+describe('Stars Test Suite', () => {
   const { wrapper, props } = setup();
 
   it('It should render', () => {
@@ -24,8 +24,4 @@ describe('App Component Test Suite', () => {
   it('It should render correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
-  it('It should fetch random product', () => {
-    expect(typeof(wrapper.instance().randomProductId())).toBe('string');
-  })
 });

@@ -6,7 +6,6 @@ const Offers = styled.div`
   flex-flow: row no-wrap;
   justify-content: space-around;
   border-top: 1px solid #ebedee;
-  border-bottom: 1px solid #ebedee;
 `
 const Span = styled.span`
   flex-flow: 300px;
@@ -41,7 +40,8 @@ const MenuDiv = styled.div`
   display: flex;
   flex-flow: row no-wrap;
   justify-content: space-between;
-  padding-left: 50px;`;
+  padding-left: 50px;
+`;
 
 const Menu = styled.div`
   display: flex;

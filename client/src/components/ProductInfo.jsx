@@ -9,6 +9,7 @@ const RenderDiv = styled.div`
   align-content: stretch;
   padding:0px;
   margin 0px;
+  border-bottom: 1px solid #ebedee;
 `;
 
 class ProductInfo extends Component {
@@ -29,8 +30,8 @@ class ProductInfo extends Component {
   render() {
     return (
       <RenderDiv>
-        <ImageViewer images={this.props.product.colors[this.state.color].images}/>
-        <OrderInfo product={this.props.product} color={this.state.color} handleColorChange={this.handleColorChange}/>
+        <ImageViewer product={this.props.product} color={this.state.color} handleColorChange={this.handleColorChange}/>
+        <OrderInfo product={this.props.product} color={this.state.color}/>
       </RenderDiv>
     );
   }

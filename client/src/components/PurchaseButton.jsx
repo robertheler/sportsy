@@ -9,7 +9,7 @@ const RenderDiv = styled.div`
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin: 35px 0;
 `;
 
 const StyledButton = styled.button`
@@ -29,6 +29,14 @@ const StyledButton = styled.button`
   display: flex;
   justify-content: space-between;
   border: none;
+  position: relative;
+  top: -2px;
+  box-shadow: 2px 2px 0 0px white, 2px 2px 0 1px black;
+  box-sizing: border-box;
+  &:active {
+    box-shadow: none;
+  }
+
   cursor: pointer;
   &:hover {
     color: gray;
@@ -36,6 +44,7 @@ const StyledButton = styled.button`
   &:active {
     outline: none;
     transform: translateY(2px) translateX(2px);
+    box-shadow: none;
   };
 `
 StyledButton.displayName = 'StyledButton'; // to be used in testing
@@ -74,6 +83,14 @@ const StyledPath = styled.path`
   d: path("M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z");
   pointer-events: all;
 `
+
+const StyledPathArrow = styled.path`
+  padding: 0px;
+  margin-top: 0px;
+  stroke-linecap: square;
+  stroke-width: 2px;
+  d: path(${props => props.d});
+`
 StyledPath.displayName = 'StyledPath';
 class PurchaseButton extends Component {
   constructor(props){
@@ -100,7 +117,13 @@ class PurchaseButton extends Component {
         <RenderDiv>
           <StyledButton onClick={this.purchase}>
             <span>Add to bag</span>
-            <span>⭢</span>
+
+              <svg height="20px" width="25px">
+                <g fill="none" stroke="currentColor" strokeMiterlimit="10">
+                  <StyledPathArrow d="M17.59 7l5 5-5 5M0 12h22"></StyledPathArrow>
+                </g>
+              </svg>
+
           </StyledButton>
           <Favorite onClick={this.favorite}>
             <StyledSvg>

@@ -10,7 +10,7 @@ const RenderDiv = styled.div`
   font-family: AdihausDIN,Helvetica;
   font-size: 11px;
   word-wrap: normal;
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
 `;
 
 const StyledA = styled.a`
@@ -49,7 +49,7 @@ class Review extends Component {
       <RenderDiv>
         <StyledCollection>{this.props.product.collection_name}</StyledCollection>
         <StyledSpan>
-          <Stars>★ ★ ★ ★ ★ </Stars>
+          <Stars review={this.props.product.review_average}></Stars>
           <StyledA href="">{this.props.product.review_count}</StyledA>
         </StyledSpan>
       </RenderDiv>

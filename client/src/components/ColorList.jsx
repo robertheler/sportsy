@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import Color from './Color.jsx'
 
 const RenderDiv = styled.div`
-  margin-top 10px;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  border-left: 1px solid #ebedee;
+  justify-content: center;
+  align-items: center;
 `;
 
 class ColorList extends Component {

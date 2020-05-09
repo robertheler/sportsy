@@ -6,9 +6,9 @@ exports[`Review Component Test Suite It should render correctly 1`] = `
     Training
   </styled.div>
   <styled.span>
-    <Stars>
-      ★ ★ ★ ★ ★ 
-    </Stars>
+    <Stars
+      review="3.52"
+    />
     <styled.a
       href=""
     >
