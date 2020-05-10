@@ -67,7 +67,7 @@ exports[`Title Component Test Suite It should render a filled heart if favorited
   box-shadow: none;
 }
 
-.c2 {
+.c3 {
   width: 50px;
   height: 50px;
   border: 1px solid black;
@@ -76,35 +76,43 @@ exports[`Title Component Test Suite It should render a filled heart if favorited
   vertical-align: middle;
 }
 
-.c2:hover {
+.c3:hover {
   border: 1px solid gray;
   color: gray;
 }
 
-.c2:active {
+.c3:active {
   -webkit-transform: translateY(2px) translateX(2px);
   -ms-transform: translateY(2px) translateX(2px);
   transform: translateY(2px) translateX(2px);
 }
 
-.c3 {
+.c4 {
   margin: 0px;
   height: 20px;
   width: 20px;
   padding: 14px;
 }
 
-.c3:hover {
+.c4:hover {
   color: gray;
 }
 
-.c4 {
+.c5 {
   fill: none;
   stroke: black;
   stroke-width: 2;
   strokeMiterlimit: 10;
   d: path("M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z");
   pointer-events: all;
+}
+
+.c2 {
+  padding: 0px;
+  margin-top: 0px;
+  stroke-linecap: square;
+  stroke-width: 2px;
+  d: path(M17.59 7l5 5-5 5M0 12h22);
 }
 
 <PurchaseButton
@@ -124,27 +132,43 @@ exports[`Title Component Test Suite It should render a filled heart if favorited
           <span>
             Add to bag
           </span>
-          <span>
-            ⭢
-          </span>
+          <svg
+            height="20px"
+            width="25px"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              strokeMiterlimit="10"
+            >
+              <styled.path
+                d="M17.59 7l5 5-5 5M0 12h22"
+              >
+                <path
+                  className="c2"
+                  d="M17.59 7l5 5-5 5M0 12h22"
+                />
+              </styled.path>
+            </g>
+          </svg>
         </button>
       </StyledButton>
       <styled.div
         onClick={[Function]}
       >
         <div
-          className="c2"
+          className="c3"
           onClick={[Function]}
         >
           <styled.svg>
             <svg
-              className="c3"
+              className="c4"
             >
               <StyledPath
                 favorite="false"
               >
                 <path
-                  className="c4"
+                  className="c5"
                 />
               </StyledPath>
             </svg>
@@ -164,9 +188,20 @@ exports[`Title Component Test Suite It should render an empty heart if not favor
     <span>
       Add to bag
     </span>
-    <span>
-      ⭢
-    </span>
+    <svg
+      height="20px"
+      width="25px"
+    >
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeMiterlimit="10"
+      >
+        <styled.path
+          d="M17.59 7l5 5-5 5M0 12h22"
+        />
+      </g>
+    </svg>
   </StyledButton>
   <styled.div
     onClick={[Function]}
@@ -188,9 +223,20 @@ exports[`Title Component Test Suite It should render correctly 1`] = `
     <span>
       Add to bag
     </span>
-    <span>
-      ⭢
-    </span>
+    <svg
+      height="20px"
+      width="25px"
+    >
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeMiterlimit="10"
+      >
+        <styled.path
+          d="M17.59 7l5 5-5 5M0 12h22"
+        />
+      </g>
+    </svg>
   </StyledButton>
   <styled.div
     onClick={[Function]}

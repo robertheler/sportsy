@@ -3,6 +3,68 @@
 exports[`Title Component Test Suite It should render correctly 1`] = `
 <styled.div>
   <styled.div>
+    <styled.div>
+      <styled.div
+        onClick={[Function]}
+      >
+        <svg
+          height="20px"
+          width="25px"
+        >
+          <g
+            fill="none"
+            stroke="black"
+            strokeMiterlimit="10"
+          >
+            <styled.path
+              d="M6.4 17l-5-5 5-5M2 12h22"
+            />
+          </g>
+        </svg>
+      </styled.div>
+      <styled.div
+        id="Slider"
+      >
+        <styled.div
+          image="https://adidasproducts.s3-us-west-1.amazonaws.com/images/B42200_color0_pic0.jpg"
+          key="0"
+        />
+        <styled.div
+          image="https://adidasproducts.s3-us-west-1.amazonaws.com/images/B42200_color0_pic2.jpg"
+          key="1"
+        />
+        <styled.div
+          image="https://adidasproducts.s3-us-west-1.amazonaws.com/images/B42200_color0_pic7.jpg"
+          key="2"
+        />
+        <styled.div
+          image="https://adidasproducts.s3-us-west-1.amazonaws.com/images/B42200_color0_pic8.jpg"
+          key="3"
+        />
+        <styled.div
+          image="https://adidasproducts.s3-us-west-1.amazonaws.com/images/B42200_color0_pic9.jpg"
+          key="4"
+        />
+      </styled.div>
+      <styled.div
+        onClick={[Function]}
+      >
+        <svg
+          height="20px"
+          width="25px"
+        >
+          <g
+            fill="none"
+            stroke="black"
+            strokeMiterlimit="10"
+          >
+            <styled.path
+              d="M17.59 7l5 5-5 5M0 12h22"
+            />
+          </g>
+        </svg>
+      </styled.div>
+    </styled.div>
     <ThumbNailList
       handleClick={[Function]}
       images={
@@ -16,11 +78,6 @@ exports[`Title Component Test Suite It should render correctly 1`] = `
       }
       indexOfSelected={0}
     />
-    <styled.div>
-      <styled.div
-        image="https://adidasproducts.s3-us-west-1.amazonaws.com/images/B42200_color0_pic0.jpg"
-      />
-    </styled.div>
   </styled.div>
   <ColorList
     color={0}
