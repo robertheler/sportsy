@@ -104,15 +104,14 @@ class ImageViewer extends Component {
     this.handleColorChange = this.handleColorChange.bind(this);
     this.previous = this.previous.bind(this);
     this.next = this.next.bind(this);
+    this.scroll = this.scroll.bind(this);
   }
 
   // Update state and render if props change
   // If new color is selected, display first pic for that color (index = 0)
   componentDidUpdate(prevProps) {
     if (this.props.product !== prevProps.product || this.props.color !== prevProps.color) {
-      this.setState({
-        indexOfSelected:0,
-      })
+      this.setState({indexOfSelected:0}, () => {this.scroll(0)})
     }
   }
 
@@ -122,16 +121,12 @@ class ImageViewer extends Component {
     if (this.state.indexOfSelected === 0) {
       this.setState({
         indexOfSelected: this.props.product.colors[this.props.color].images.length - 1
-      });
+      }, () => {this.scroll(this.state.indexOfSelected)});
     } else {
       this.setState({
         indexOfSelected: this.state.indexOfSelected - 1
-      });
+      }, () => {this.scroll(this.state.indexOfSelected)});
     }
-    document.getElementById("Slider").scroll({
-      left: 800 * this.state.indexOfSelected,
-      behavior: 'smooth'
-    });
   }
 
   // Go forward to next image on click
@@ -140,21 +135,24 @@ class ImageViewer extends Component {
     if (this.state.indexOfSelected === this.props.product.colors[this.props.color].images.length - 1) {
       this.setState({
         indexOfSelected: 0
-      });
+      }, () => {this.scroll(this.state.indexOfSelected)});
     } else {
       this.setState({
         indexOfSelected: this.state.indexOfSelected + 1
-      });
+      }, () => {this.scroll(this.state.indexOfSelected)});
     }
-    document.getElementById("Slider").scroll({
-      left: 800 * this.state.indexOfSelected,
-      behavior: 'smooth'
-    });
   }
   // Click handler is passed to child component ThumbNailList
   // and will be called by child component
   handleClick(index, url) {
-    this.setState({indexOfSelected: index});
+    this.setState({indexOfSelected: index}, () => {this.scroll(index)});
+  }
+
+  scroll(index){
+    document.getElementById("Slider").scroll({
+      left: 800 * index,
+      behavior: 'smooth'
+    });
   }
 
   handleColorChange(color){
