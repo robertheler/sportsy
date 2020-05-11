@@ -5,7 +5,8 @@ import $ from 'jquery';
 
 
 const data = require('../../../db/data.json');
-const PORT_1 = process.env.REVIEWSPORT || 3001;
+
+const PORT_1 = process.env.PRODUCT_PORT || 3001;
 const url = `http://127.0.0.1:${PORT_1}/api/products/`
 
 class App extends Component {
