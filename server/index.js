@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Set a constant for the port that our express server will listen on
-const PORT_1 = process.env.REVIEWSPORT || 3001;
+const PORT_1 = process.env.PRODUCT_PORT || 3001;
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use('/api/products', router);
