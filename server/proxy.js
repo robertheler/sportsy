@@ -20,12 +20,13 @@ proxy.use(express.static(path.join(__dirname, '../client/dist')));
 proxy.get('/:id', function(req, res) {
   request(SERVER + `api/products/${req.params.id}`, function (error, response, body) {
     if (!error && response.statusCode === 200) {
-      res.send(body);  //orjson
+      res.send(body);
     } else {
       res.status(500).end();
     }
   });
 });
+
 
 // Start the server on the provided port
 proxy.listen(PORT, () => console.log(`Listening on port: http://localhost:${PORT}`));
