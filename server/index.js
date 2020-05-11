@@ -22,4 +22,3 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use('/api/products', router);
 // Start the server on the provided port
 app.listen(PORT_1, () => console.log(`Listening on port: http://localhost:${PORT_1}`));
-
