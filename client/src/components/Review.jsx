@@ -13,13 +13,9 @@ const RenderDiv = styled.div`
   margin: 0 0 20px 0;
 `;
 
-const StyledA = styled.a`
-  color: black;
+const StyledA = styled.span`
+
   text-decoration: underline;
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
 `
 const StyledCollection = styled.div`
   font-weight: 400;
@@ -31,9 +27,10 @@ const StyledCollection = styled.div`
 `;
 
 const StyledSpan = styled.span`
+color: black;
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #fff; !important;
+    background-color: #000; !important;
   }
   cursor: pointer;
 `

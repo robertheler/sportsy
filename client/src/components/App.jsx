@@ -60,7 +60,7 @@ class App extends Component {
     return(
       <Fragment>
         <Header />
-        < ProductInfo product={this.state.product}/>
+        <ProductInfo product={this.state.product}/>
       </Fragment>
     )
   }
