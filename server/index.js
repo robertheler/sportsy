@@ -16,9 +16,9 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Set a constant for the port that our express server will listen on
-const PORT = 3000;
+const PORT_1 = process.env.PRODUCT_PORT || 3001;
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use('/api/products', router);
 // Start the server on the provided port
-app.listen(PORT, () => console.log(`Listening on port: http://localhost:${PORT}`));
+app.listen(PORT_1, () => console.log(`Listening on port: http://localhost:${PORT_1}`));

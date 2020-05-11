@@ -49,6 +49,7 @@
     "nodemon": "^1.19.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-slick": "^0.25.2",
     "serialize-javascript": "^3.0.0",
     "sinon": "^9.0.2",
