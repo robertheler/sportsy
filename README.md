@@ -24,4 +24,12 @@ npm run react-dev
 npm start
 ```
 
+### Or if you're using Docker:
+
+```sh
+docker build -t product-module .
+docker run -d -p 3001:3001 --rm --name product-container product-module
+```
+
+
 Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
