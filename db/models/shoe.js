@@ -36,7 +36,7 @@ let options = {
   useCreateIndex: true
 }
 
-mongoose.connect('mongodb://localhost/adidas', options);
+mongoose.connect('mongodb://mongo:27017/adidas', options);
 
 // findAll retrieves all shoes
 function findAll(callback) {
