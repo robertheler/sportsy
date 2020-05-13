@@ -46,7 +46,9 @@ function findAll(callback) {
 
 // findOne will retrieve the shoe associated with the given id
 function findOne(id, callback) {
-  ShoeModel.find({id: id}, callback)
+  mongoose.connect('mongodb://mongo:27017/adidas', options, () => {
+    ShoeModel.find({id: id}, callback)
+  })
 }
 
 // insertOne inserts a shoe into the db
