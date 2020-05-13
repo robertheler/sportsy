@@ -21,6 +21,7 @@ mongoose.connect('mongodb://mongo:27017/adidas', options, function() {
       Shoes.insertOne(shoe, (err) => {
         if (err) {
           console.log(err);
+          callback(err);
         } else {
           console.log(`${shoe.id} inserted into the collection`);
           callback();

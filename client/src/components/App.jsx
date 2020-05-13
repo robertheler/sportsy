@@ -13,7 +13,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      product: data[0]
+      product: data[3]
     }
   }
 

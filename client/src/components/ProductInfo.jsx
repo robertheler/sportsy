@@ -14,15 +14,21 @@ const RenderDiv = styled.div`
 
 class ProductInfo extends Component {
   constructor(props){
-    super(props)
-
+    super(props);
     this.state = {
-      color: 0 // index of color to display; default is first one
+      // index of color to display; default is 0
+      color: 0
     }
-
     this.handleColorChange = this.handleColorChange.bind(this);
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.product !== this.props.product) {
+      this.setState({
+        color: Math.floor(Math.random() * this.props.product.colors.length)
+      })
+    }
+  }
   handleColorChange(color) {
     this.setState({color})
   }

@@ -10,7 +10,8 @@
     "lint": "npx eslint --init",
     "test": "jest -u",
     "test:watch": "npm run test -- --watch",
-    "test:coverage": "npm run test -- --coverage --coverageDirectory=./client/src/components"
+    "test:coverage": "npm run test -- --coverage --coverageDirectory=./client/src/components",
+    "start-container": "npm run seed-database && npm run start"
   },
   "keywords": [],
   "author": "",
@@ -37,6 +38,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "async": "^3.2.0",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",

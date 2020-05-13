@@ -43,7 +43,6 @@ function findAll(callback) {
   ShoeModel.find({}, callback);
 }
 
-
 // findOne will retrieve the shoe associated with the given id
 function findOne(id, callback) {
   mongoose.connect('mongodb://mongo:27017/adidas', options, () => {
