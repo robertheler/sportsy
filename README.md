@@ -1,6 +1,6 @@
 # Product View Component for Sportswear E-Commerce Website
-Full stack app for sportswear e-commerce company. This repo contains Robert Heler's contributions to https://github.com/9-space-lobster/, including main image carousel and add-to-card components.
-<br/><br/><br/>
+Full stack app for sportswear e-commerce company with mongoDB-enabled microsystem architecture. This repo contains Robert Heler's contributions to https://github.com/9-space-lobster/, including main image carousel and add-to-card components.
+<br/><br/>
 ## Looping Slideshow Carousel
 ![Sample Product Component](/db/data/main.gif)
 <br/><br/><br/>
