@@ -1,5 +1,4 @@
-# Adidas Product View Component
-This repo contains react components that mimic the product view component on www.adidas.com
+# Product View Component for Sportswear E-Commerce Website
 
 ## Looping Slideshow Carousel
 ![Sample Product Component](/db/data/main.gif)
@@ -14,6 +13,11 @@ This repo contains react components that mimic the product view component on www
 ![Sample Product Component](/db/data/magnifying.gif)
 
 ## Getting Started
+```sh
+npm run react-dev
+npm start
+```
+or 
 ```sh
 docker-compose up
 ```
